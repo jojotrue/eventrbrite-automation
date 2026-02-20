@@ -1,0 +1,35 @@
+
+// spec: specs/eventbrite.test.plan.md
+// seed: tests/eventbrite.seed.spec.js
+
+const { test, expect } = require('../../fixtures/homePage.fixture');
+
+test.describe('Navigation & Exploration', () => {
+  test('1.7: Navigate via Find Events link', async ({ homePage, page }) => {
+    // Step 1: User is on the Eventbrite homepage
+    // expect: The 'Find Events' link is visible in the main navigation
+    await expect(homePage.findEventsLink).toBeVisible();
+
+    // Step 2: Click on 'Find Events' link
+    await homePage.clickFindEvents();
+
+    // expect: User is navigated to the events listing page
+    await expect(page).toHaveURL(/\/d\/.*\/events/);
+
+    // expect: The location-based event listing is displayed
+    await expect(homePage.eventListingHeading).toBeVisible();
+
+    // Step 3: Verify the page displays browsing options by neighborhood
+    // expect: Neighborhood tabs or filters are present (e.g., Downtown Denver, North Denver)
+    await expect(homePage.neighborhoodTablist).toBeVisible();
+
+    const tabCount = await homePage.getNeighborhoodTabCount();
+    expect(tabCount).toBeGreaterThan(0);
+
+    // Verify specific neighborhood tabs are present
+    const downtonDenverTab = await homePage.getNeighborhoodTab('Downtown Denver');
+    const northDenverTab = await homePage.getNeighborhoodTab('North Denver');
+    await expect(downtonDenverTab).toBeVisible();
+    await expect(northDenverTab).toBeVisible();
+  });
+});
