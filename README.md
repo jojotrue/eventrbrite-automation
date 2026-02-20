@@ -226,4 +226,4 @@ The workflow file lives at `.github/workflows/playwright.yml`.
 ## Author
 
 Built by [jojotrue](https://github.com/jojotrue) — QA Engineer  
-Open to opportunities. Let's connect on [LinkedIn](https://linkedin.com/in/your-profile).
+
