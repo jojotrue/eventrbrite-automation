@@ -177,7 +177,7 @@ class HomePage {
 
   // Get a neighborhood tab by name (dynamic lookup)
 getNeighborhoodTab(name) {
-    return this.neighborhoodTablist.getByRole('tab', { name });
+  return this.neighborhoodTablist.getByRole('checkbox', { name });
   }
 
   async selectNeighborhood(neighborhood) {
@@ -186,7 +186,7 @@ getNeighborhoodTab(name) {
   }
 
   async getNeighborhoodTabCount() {
-    return await this.neighborhoodTabs.count();
+  return await this.neighborhoodTablist.getByRole('checkbox').count();
   }
 
   // ============================================================================
