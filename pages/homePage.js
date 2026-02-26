@@ -31,7 +31,7 @@ class HomePage {
     // Events Listing Page - Headings & Neighborhood Navigation
     this.eventListingHeading = page.locator('h1');
     this.neighborhoodTablist = page.getByRole('tablist', { name: 'neighbourhood-tabs' });
-    this.neighborhoodTabs = page.getByRole('tab');
+    this.neighborhoodTabs = this.neighborhoodTablist.getByRole('tab');
 
     // Browse Tabs
     this.allTab = page.getByRole('tab', { name: 'All' });
@@ -60,7 +60,10 @@ class HomePage {
     this.categoryHeading = page.locator('h1, h2');
   }
 
+  // ============================================================================
   // Navigation Methods
+  // ============================================================================
+
   async goto(path = '/') {
     await this.page.goto(path, { waitUntil: 'networkidle' });
   }
@@ -85,7 +88,10 @@ class HomePage {
     await this.logInLink.click();
   }
 
+  // ============================================================================
   // Search Methods
+  // ============================================================================
+
   async searchForEvent(searchTerm, location = null) {
     await this.searchInput.fill(searchTerm);
     if (location) {
@@ -98,9 +104,17 @@ class HomePage {
     await this.locationInput.fill(location);
   }
 
-  // Category Navigation
+  // ============================================================================
+  // Category Navigation Methods
+  // ============================================================================
+
+  // Get a category link by name (dynamic lookup)
+  getCategoryLink(categoryName) {
+    return this.page.getByRole('link', { name: categoryName });
+  }
+
   async selectCategory(categoryName) {
-    const category = this.page.getByRole('link', { name: categoryName });
+    const category = this.getCategoryLink(categoryName);
     await category.click();
   }
 
@@ -124,7 +138,10 @@ class HomePage {
     await this.foodDrinkCategory.click();
   }
 
+  // ============================================================================
   // Browse Tab Methods
+  // ============================================================================
+
   async selectAllTab() {
     await this.allTab.click();
   }
@@ -141,26 +158,38 @@ class HomePage {
     await this.thisWeekendTab.click();
   }
 
+  // Get a browse tab by name (dynamic lookup)
+  getBrowseTab(tabName) {
+    return this.page.getByRole('tab', { name: tabName });
+  }
+
   async selectBrowseTab(tabName) {
-    const tab = this.page.getByRole('tab', { name: tabName });
+    const tab = this.getBrowseTab(tabName);
     await tab.click();
   }
 
-  // Neighborhood Navigation
+  // ============================================================================
+  // Neighborhood Navigation Methods
+  // ============================================================================
+
+  // Get a neighborhood tab by name (dynamic lookup)
+getNeighborhoodTab(name) {
+    return this.neighborhoodTablist.getByRole('tab', { name });
+  }
+
   async selectNeighborhood(neighborhood) {
-    const tab = this.page.getByRole('tab', { name: neighborhood });
+    const tab = this.getNeighborhoodTab(neighborhood);
     await tab.click();
   }
 
   async getNeighborhoodTabCount() {
-  return await this.neighborhoodTabs.count();
-}
+    return await this.neighborhoodTabs.count();
+  }
 
-async getNeighborhoodTab(name) {
-  return this.page.getByRole('tab', { name });
-}
-
+  // ============================================================================
   // Form Methods - Login
+  // ============================================================================
+
   async enterEmail(email) {
     await this.emailField.fill(email);
   }
@@ -188,7 +217,10 @@ async getNeighborhoodTab(name) {
     await this.clickSignIn();
   }
 
-  // Utility Methods
+  // ============================================================================
+  // Utility Methods - Event Lookup
+  // ============================================================================
+
   async getErrorMessage() {
     return await this.errorAlert.textContent();
   }
@@ -197,16 +229,20 @@ async getNeighborhoodTab(name) {
     return await this.eventCards.count();
   }
 
-  async getEventByName(eventName) {
+  // Get an event link by name (dynamic lookup)
+  getEventByName(eventName) {
     return this.page.getByRole('link', { name: new RegExp(eventName, 'i') });
   }
 
   async clickEventByName(eventName) {
-    const event = await this.getEventByName(eventName);
+    const event = this.getEventByName(eventName);
     await event.click();
   }
 
+  // ============================================================================
   // Verification Methods for Navigation & Category Pages
+  // ============================================================================
+
   async verifyBreadcrumbNavVisible() {
     return this.breadcrumbNav;
   }
@@ -215,7 +251,8 @@ async getNeighborhoodTab(name) {
     return this.breadcrumbNav.getByRole('link');
   }
 
-  async getCategoryHeading(categoryName) {
+  // Get a category heading by name (dynamic lookup)
+  getCategoryHeading(categoryName) {
     return this.categoryHeading.filter({ hasText: new RegExp(categoryName, 'i') });
   }
 
@@ -227,17 +264,16 @@ async getNeighborhoodTab(name) {
     return (await this.eventHeadings.count()) > 0;
   }
 
+  // Get a category breadcrumb link by name (dynamic lookup)
+  // Falls back to text-only breadcrumb if link not found
   async getCategoryBreadcrumbLink(categoryName) {
-    // The final breadcrumb item may be text-only (not a link)
-    // Try to find it as a link first, then fall back to text content
     const linkInBreadcrumb = this.breadcrumbNav.getByRole('link', { name: new RegExp(categoryName, 'i') });
-    
-    // Count how many links match - if none, look for text in breadcrumb instead
+
     const linkCount = await linkInBreadcrumb.count();
     if (linkCount > 0) {
       return linkInBreadcrumb;
     }
-    
+
     // Fall back to finding the breadcrumb list item with text content
     return this.breadcrumbNav.locator('li').filter({ hasText: new RegExp(categoryName, 'i') });
   }

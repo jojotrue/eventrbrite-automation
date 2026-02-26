@@ -18,7 +18,7 @@ test.describe('Search & Location Functionality', () => {
     await homePage.searchButton.click();
     
     // Wait for results to load
-    await homePage.page.waitForURL('**/music**', { timeout: 5000 });
+    await homePage.page.waitForURL('**/music/**', { timeout: 15000 });
     await expect(homePage.eventCards.first()).toBeVisible();
 
     // 4. Verify the results list contains relevant events

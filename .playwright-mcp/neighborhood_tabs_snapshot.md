@@ -1,0 +1,1283 @@
+- generic [ref=e3]:
+  - banner [ref=e5]:
+    - navigation "Main Navigation" [ref=e6]:
+      - generic [ref=e7]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: https://www.eventbrite.com/
+          - generic "Eventbrite" [ref=e11]:
+            - img [ref=e12]
+            - generic: Eventbrite
+        - generic [ref=e21] [cursor=pointer]:
+          - generic [ref=e27]:
+            - img [ref=e30]
+            - generic [ref=e32]:
+              - generic:
+                - generic:
+                  - generic: Search events
+              - searchbox "Search events" [ref=e33]
+          - generic [ref=e34]:
+            - separator [ref=e36]
+            - generic [ref=e46]:
+              - generic [ref=e48]:
+                - img [ref=e49]
+                - generic: Choose a location
+              - generic [ref=e51]:
+                - generic:
+                  - generic:
+                    - generic: autocomplete
+                - combobox "Choose a location autocomplete" [ref=e52]: Denver
+                - text: xxxxxx
+          - button "search button" [ref=e55]:
+            - img "search button" [ref=e56]
+        - list [ref=e60]:
+          - listitem [ref=e61]:
+            - link "Contact Sales" [ref=e62] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/organizer/contact-sales/
+              - generic "Contact Sales" [ref=e63]
+          - listitem [ref=e64]:
+            - link "Create Events" [ref=e65] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/organizer/overview/
+              - generic "Create Events" [ref=e66]
+          - listitem [ref=e67]:
+            - button "Help Center" [ref=e69] [cursor=pointer]:
+              - generic [ref=e70]: Help Center
+              - img [ref=e73]
+          - listitem [ref=e75]:
+            - link "Find my tickets" [ref=e76] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/signin/signup/?referrer=%2Fmytickets
+              - generic "Find my tickets" [ref=e77]
+          - listitem [ref=e78]:
+            - link "Log In" [ref=e79] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/signin/?referrer=%2Fd%2Fco--denver%2Fevents%2F
+              - generic "Log In" [ref=e80]
+          - listitem [ref=e81]:
+            - link "Sign Up" [ref=e82] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/signin/signup/?referrer=%2Fd%2Fco--denver%2Fevents%2F
+              - generic "Sign Up" [ref=e83]
+  - generic [ref=e89]:
+    - main [ref=e90]:
+      - generic [ref=e94]:
+        - navigation "breadcrumbs" [ref=e95]:
+          - list [ref=e96]:
+            - listitem [ref=e97]:
+              - link "Home" [ref=e98] [cursor=pointer]:
+                - /url: /
+              - generic [ref=e99]: /
+            - listitem [ref=e100]:
+              - link "United States" [ref=e101] [cursor=pointer]:
+                - /url: /ttd/united-states/
+              - generic [ref=e102]: /
+            - listitem [ref=e103]:
+              - link "Things to do in Denver" [ref=e104] [cursor=pointer]:
+                - /url: /ttd/co--denver/
+              - generic [ref=e105]: /
+            - listitem [ref=e106]: Events in Denver
+        - generic [ref=e107]:
+          - img "Denver" [ref=e109]
+          - generic [ref=e110]:
+            - heading "Best events in Denver" [level=1] [ref=e111]:
+              - paragraph [ref=e112]: Best events in
+              - paragraph [ref=e113]: Denver
+            - paragraph [ref=e115]: A mile high up in the Rockies you'll find loads of events and stuff to do. Head over to the historic Union Station in Lo-Do or cruise over to Wynkoop Street for an old timey cocktail in the Cruise Room. Bike the high-line trail. Take in nature at the Garden of the Gods. Hit up a show, dinner, and galleries in the RiNo Art District.
+            - generic [ref=e123]:
+              - img [ref=e126]
+              - generic [ref=e128]:
+                - generic:
+                  - generic:
+                    - generic: autocomplete
+                - combobox "autocomplete autocomplete" [ref=e129]: Denver
+                - text: xxxxxx
+              - img [ref=e132]
+        - text: xxxxxx
+        - generic [ref=e134]:
+          - heading "Explore by neighborhood" [level=2] [ref=e135]
+          - generic [ref=e136]:
+            - tablist "neighbourhood-tabs" [ref=e137]:
+              - tab "Downtown Denver" [selected] [ref=e138]
+              - tab "North Denver" [ref=e139]
+              - tab "Colfax" [ref=e140]
+            - separator [ref=e141]
+          - generic [ref=e148]:
+            - generic [ref=e151]:
+              - link "View Thrift & Tinis" [ref=e152] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/e/thrift-tinis-tickets-1981459516754?aff=ebdssbneighborhoodbrowse
+                - img "Thrift & Tinis primary image" [ref=e154]
+              - generic [ref=e156]:
+                - complementary [ref=e157]:
+                  - paragraph [ref=e159]: Almost full
+                - link "View Thrift & Tinis" [ref=e160] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/thrift-tinis-tickets-1981459516754?aff=ebdssbneighborhoodbrowse
+                  - heading "Thrift & Tinis" [level=3] [ref=e161]
+                - paragraph [ref=e162]: Saturday • 1:00 PM
+                - paragraph [ref=e163]: The Maven Hotel at Dairy Block
+                - paragraph [ref=e165]: Free
+                - generic [ref=e166]:
+                  - paragraph [ref=e167]: The Curio Cabinet
+                  - generic [ref=e168]:
+                    - img [ref=e170]
+                    - text: 46 followers
+                - generic [ref=e173]:
+                  - 'button "Save this event: Thrift & Tinis" [ref=e175] [cursor=pointer]':
+                    - generic [ref=e176]:
+                      - img [ref=e177]
+                      - generic: "Save this event: Thrift & Tinis"
+                  - 'button "Share this event: Thrift & Tinis" [ref=e180] [cursor=pointer]':
+                    - generic [ref=e181]:
+                      - img [ref=e182]
+                      - generic: "Share this event: Thrift & Tinis"
+            - generic [ref=e187]:
+              - link "View Back in the \"DAY\" Party" [ref=e188] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/e/back-in-the-day-party-tickets-1982366294952?aff=ebdssbneighborhoodbrowse
+                - img "Back in the \"DAY\" Party primary image" [ref=e190]
+              - generic [ref=e192]:
+                - complementary [ref=e193]:
+                  - paragraph [ref=e195]: Almost full
+                - link "View Back in the \"DAY\" Party" [ref=e196] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/back-in-the-day-party-tickets-1982366294952?aff=ebdssbneighborhoodbrowse
+                  - heading "Back in the \"DAY\" Party" [level=3] [ref=e197]
+                - paragraph [ref=e198]: Saturday • 3:00 PM
+                - paragraph [ref=e199]: "\"SPANGALANG\""
+                - paragraph [ref=e201]: Free
+                - generic [ref=e202]:
+                  - paragraph [ref=e203]: DUANE TAYLOR ENTERTAINMENT
+                  - generic [ref=e204]:
+                    - img [ref=e206]
+                    - text: 874 followers
+                - generic [ref=e209]:
+                  - 'button "Save this event: Back in the \"DAY\" Party" [ref=e211] [cursor=pointer]':
+                    - generic [ref=e212]:
+                      - img [ref=e213]
+                      - generic: "Save this event: Back in the \"DAY\" Party"
+                  - 'button "Share this event: Back in the \"DAY\" Party" [ref=e216] [cursor=pointer]':
+                    - generic [ref=e217]:
+                      - img [ref=e218]
+                      - generic: "Share this event: Back in the \"DAY\" Party"
+            - generic [ref=e223]:
+              - link "View 2026 Freddy and Spotllight Ball" [ref=e224] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/e/2026-freddy-and-spotllight-ball-registration-1979564249960?aff=ebdssbneighborhoodbrowse
+                - img "2026 Freddy and Spotllight Ball primary image" [ref=e226]
+              - generic [ref=e228]:
+                - complementary [ref=e229]:
+                  - paragraph [ref=e231]: Almost full
+                - link "View 2026 Freddy and Spotllight Ball" [ref=e232] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/2026-freddy-and-spotllight-ball-registration-1979564249960?aff=ebdssbneighborhoodbrowse
+                  - heading "2026 Freddy and Spotllight Ball" [level=3] [ref=e233]
+                - paragraph [ref=e234]: Fri, Mar 6 • 2:15 PM
+                - paragraph [ref=e235]: DoubleTree by Hilton Denver
+                - paragraph [ref=e237]: From $25.00
+                - generic [ref=e238]:
+                  - paragraph [ref=e239]: Colorado Dance Events LLC.
+                  - generic [ref=e240]:
+                    - img [ref=e242]
+                    - text: 70 followers
+                - generic [ref=e245]:
+                  - 'button "Save this event: 2026 Freddy and Spotllight Ball" [ref=e247] [cursor=pointer]':
+                    - generic [ref=e248]:
+                      - img [ref=e249]
+                      - generic: "Save this event: 2026 Freddy and Spotllight Ball"
+                  - 'button "Share this event: 2026 Freddy and Spotllight Ball" [ref=e252] [cursor=pointer]':
+                    - generic [ref=e253]:
+                      - img [ref=e254]
+                      - generic: "Share this event: 2026 Freddy and Spotllight Ball"
+            - generic [ref=e259]:
+              - paragraph [ref=e261]: Sold Out
+              - link "View BENISE - \"Spanish Nights by Candlelight\"" [ref=e262] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/e/benise-spanish-nights-by-candlelight-tickets-1976466514550?aff=ebdssbneighborhoodbrowse
+                - img "BENISE - \"Spanish Nights by Candlelight\" primary image" [ref=e264]
+              - generic [ref=e266]:
+                - link "View BENISE - \"Spanish Nights by Candlelight\"" [ref=e267] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/benise-spanish-nights-by-candlelight-tickets-1976466514550?aff=ebdssbneighborhoodbrowse
+                  - heading "BENISE - \"Spanish Nights by Candlelight\"" [level=3] [ref=e268]
+                - paragraph [ref=e269]: Sat, Mar 14 • 7:00 PM
+                - paragraph [ref=e270]: The Kirk of Highland
+                - paragraph [ref=e272]: From $39.11
+                - generic [ref=e273]:
+                  - paragraph [ref=e274]: Spanish Guitar Entertainment
+                  - generic [ref=e275]:
+                    - img [ref=e277]
+                    - text: 156 followers
+                - generic [ref=e280]:
+                  - 'button "Save this event: BENISE - \"Spanish Nights by Candlelight\"" [ref=e282] [cursor=pointer]':
+                    - generic [ref=e283]:
+                      - img [ref=e284]
+                      - generic: "Save this event: BENISE - \"Spanish Nights by Candlelight\""
+                  - 'button "Share this event: BENISE - \"Spanish Nights by Candlelight\"" [ref=e287] [cursor=pointer]':
+                    - generic [ref=e288]:
+                      - img [ref=e289]
+                      - generic: "Share this event: BENISE - \"Spanish Nights by Candlelight\""
+        - generic [ref=e292]:
+          - generic [ref=e297]:
+            - heading "After 8pm" [level=2] [ref=e300]
+            - generic [ref=e302]:
+              - generic [ref=e305]:
+                - link "View MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e306] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/mira-kater-blau-berlin-w-peter-blick-by-below-radar-sound-ground-tickets-1979288583434?aff=ebdssbcitybrowsenightlife
+                  - img "MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground primary image" [ref=e308]
+                - generic [ref=e310]:
+                  - complementary [ref=e311]:
+                    - paragraph [ref=e313]: Almost full
+                  - link "View MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e314] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/mira-kater-blau-berlin-w-peter-blick-by-below-radar-sound-ground-tickets-1979288583434?aff=ebdssbcitybrowsenightlife
+                    - heading "MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [level=3] [ref=e315]
+                  - paragraph [ref=e316]: Tomorrow • 8:30 PM
+                  - paragraph [ref=e317]: Apollo Hall
+                  - paragraph [ref=e319]: Check ticket price on event
+                  - generic [ref=e320]:
+                    - 'button "Save this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e322] [cursor=pointer]':
+                      - generic [ref=e323]:
+                        - img [ref=e324]
+                        - generic: "Save this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground"
+                    - 'button "Share this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e327] [cursor=pointer]':
+                      - generic [ref=e328]:
+                        - img [ref=e329]
+                        - generic: "Share this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground"
+              - generic [ref=e334]:
+                - link "View Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats" [ref=e335] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/denver-speed-dating-for-singles-age-24-39-colorado-at-left-hand-rino-drinks-eats-tickets-1978066172169?aff=ebdssbcitybrowsenightlife
+                  - img "Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats primary image" [ref=e337]
+                - generic [ref=e339]:
+                  - complementary [ref=e340]:
+                    - paragraph [ref=e342]: Almost full
+                  - link "View Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats" [ref=e343] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/denver-speed-dating-for-singles-age-24-39-colorado-at-left-hand-rino-drinks-eats-tickets-1978066172169?aff=ebdssbcitybrowsenightlife
+                    - heading "Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats" [level=3] [ref=e344]
+                  - paragraph [ref=e345]: Tomorrow • 8:00 PM
+                  - paragraph [ref=e346]: Left Hand RiNo Drinks & Eats
+                  - paragraph [ref=e348]: Check ticket price on event
+                  - generic [ref=e349]:
+                    - 'button "Save this event: Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats" [ref=e351] [cursor=pointer]':
+                      - generic [ref=e352]:
+                        - img [ref=e353]
+                        - generic: "Save this event: Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats"
+                    - 'button "Share this event: Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats" [ref=e356] [cursor=pointer]':
+                      - generic [ref=e357]:
+                        - img [ref=e358]
+                        - generic: "Share this event: Denver Speed Dating for Singles Age 24-39 ♥ Colorado at Left Hand Rino Drinks & Eats"
+              - generic [ref=e363]:
+                - link "View Purim 2026 Electro Costume Party" [ref=e364] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/purim-2026-electro-costume-party-tickets-1981969382777?aff=ebdssbcitybrowsenightlife
+                  - img "Purim 2026 Electro Costume Party primary image" [ref=e366]
+                - generic [ref=e368]:
+                  - complementary [ref=e369]:
+                    - paragraph [ref=e371]: Almost full
+                  - link "View Purim 2026 Electro Costume Party" [ref=e372] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/purim-2026-electro-costume-party-tickets-1981969382777?aff=ebdssbcitybrowsenightlife
+                    - heading "Purim 2026 Electro Costume Party" [level=3] [ref=e373]
+                  - paragraph [ref=e374]: Tuesday • 9:00 PM
+                  - paragraph [ref=e375]: Beacon RiNo
+                  - paragraph [ref=e377]: Check ticket price on event
+                  - generic [ref=e378]:
+                    - 'button "Save this event: Purim 2026 Electro Costume Party" [ref=e380] [cursor=pointer]':
+                      - generic [ref=e381]:
+                        - img [ref=e382]
+                        - generic: "Save this event: Purim 2026 Electro Costume Party"
+                    - 'button "Share this event: Purim 2026 Electro Costume Party" [ref=e385] [cursor=pointer]':
+                      - generic [ref=e386]:
+                        - img [ref=e387]
+                        - generic: "Share this event: Purim 2026 Electro Costume Party"
+              - generic [ref=e392]:
+                - 'link "View Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim" [ref=e393] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/masters-of-hawaiian-music-george-kahumoku-jr-led-kaapana-sonny-lim-tickets-1553248681619?aff=ebdssbcitybrowsenightlife
+                  - 'img "Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim primary image" [ref=e395]'
+                - generic [ref=e397]:
+                  - complementary [ref=e398]:
+                    - paragraph [ref=e400]: Almost full
+                  - 'link "View Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim" [ref=e401] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/masters-of-hawaiian-music-george-kahumoku-jr-led-kaapana-sonny-lim-tickets-1553248681619?aff=ebdssbcitybrowsenightlife
+                    - 'heading "Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim" [level=3] [ref=e402]'
+                  - paragraph [ref=e403]: Sat, Mar 7 • 8:00 PM
+                  - paragraph [ref=e404]: Swallow Hill Music - Daniels Hall
+                  - paragraph [ref=e406]: Check ticket price on event
+                  - generic [ref=e407]:
+                    - 'button "Save this event: Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim" [ref=e409] [cursor=pointer]':
+                      - generic [ref=e410]:
+                        - img [ref=e411]
+                        - generic: "Save this event: Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim"
+                    - 'button "Share this event: Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim" [ref=e414] [cursor=pointer]':
+                      - generic [ref=e415]:
+                        - img [ref=e416]
+                        - generic: "Share this event: Masters of Hawaiian Music: George Kahumoku Jr, Led Kaapana, & Sonny Lim"
+          - generic [ref=e423]:
+            - generic [ref=e424]:
+              - heading "See more Popular in Denver" [level=2] [ref=e426]:
+                - link "See more Popular in Denver" [ref=e427] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/d/co--denver/all-events/
+                  - text: Popular in Denver
+              - link "See more Popular in Denver" [ref=e428] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/co--denver/all-events/
+                - text: Explore more events
+                - img [ref=e430]
+            - generic [ref=e433]:
+              - generic [ref=e436]:
+                - 'link "View The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow" [ref=e437] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/the-colorado-airbnb-playbook-where-to-buy-and-how-to-cash-flow-tickets-1983564607136?aff=ebdssbcitybrowse
+                  - 'img "The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow primary image" [ref=e439]'
+                - generic [ref=e441]:
+                  - 'link "View The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow" [ref=e442] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/the-colorado-airbnb-playbook-where-to-buy-and-how-to-cash-flow-tickets-1983564607136?aff=ebdssbcitybrowse
+                    - 'heading "The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow" [level=3] [ref=e443]'
+                  - paragraph [ref=e444]: Thu, Mar 5 • 6:00 PM
+                  - paragraph [ref=e445]: Refound Goods -Appt. Only
+                  - paragraph [ref=e447]: Free
+                  - generic [ref=e448]:
+                    - paragraph [ref=e449]: Good Neighbor Realty
+                    - generic [ref=e450]:
+                      - img [ref=e452]
+                      - text: 651 followers
+                  - generic [ref=e455]:
+                    - paragraph [ref=e456]: Promoted
+                    - img [ref=e461]
+                  - generic [ref=e464]:
+                    - 'button "Save this event: The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow" [ref=e466] [cursor=pointer]':
+                      - generic [ref=e467]:
+                        - img [ref=e468]
+                        - generic: "Save this event: The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow"
+                    - 'button "Share this event: The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow" [ref=e471] [cursor=pointer]':
+                      - generic [ref=e472]:
+                        - img [ref=e473]
+                        - generic: "Share this event: The Colorado Airbnb Playbook: Where to Buy and How to Cash Flow"
+                    - button "Promoted event actions" [ref=e479] [cursor=pointer]:
+                      - generic [ref=e480]:
+                        - img [ref=e481]
+                        - generic: Promoted event actions
+              - generic [ref=e487]:
+                - link "View MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e488] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/mira-kater-blau-berlin-w-peter-blick-by-below-radar-sound-ground-tickets-1979288583434?aff=ebdssbcitybrowse
+                  - img "MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground primary image" [ref=e490]
+                - generic [ref=e492]:
+                  - complementary [ref=e493]:
+                    - paragraph [ref=e495]: Almost full
+                  - link "View MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e496] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/mira-kater-blau-berlin-w-peter-blick-by-below-radar-sound-ground-tickets-1979288583434?aff=ebdssbcitybrowse
+                    - heading "MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [level=3] [ref=e497]
+                  - paragraph [ref=e498]: Tomorrow • 8:30 PM
+                  - paragraph [ref=e499]: Apollo Hall
+                  - paragraph [ref=e501]: Check ticket price on event
+                  - generic [ref=e502]:
+                    - 'button "Save this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e504] [cursor=pointer]':
+                      - generic [ref=e505]:
+                        - img [ref=e506]
+                        - generic: "Save this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground"
+                    - 'button "Share this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground" [ref=e509] [cursor=pointer]':
+                      - generic [ref=e510]:
+                        - img [ref=e511]
+                        - generic: "Share this event: MIRA (Kater Blau, Berlin) w/ Peter Blick by Below Radar & Sound Ground"
+              - generic [ref=e516]:
+                - link "View Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection" [ref=e517] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/pop-up-vocal-jam-session-february-a-night-of-music-and-connection-tickets-1981249517641?aff=ebdssbcitybrowse
+                  - img "Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection primary image" [ref=e519]
+                - generic [ref=e521]:
+                  - link "View Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection" [ref=e522] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/pop-up-vocal-jam-session-february-a-night-of-music-and-connection-tickets-1981249517641?aff=ebdssbcitybrowse
+                    - heading "Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection" [level=3] [ref=e523]
+                  - paragraph [ref=e524]: Tomorrow • 6:30 PM
+                  - paragraph [ref=e525]: York Street Yards
+                  - paragraph [ref=e527]: Check ticket price on event
+                  - generic [ref=e528]:
+                    - 'button "Save this event: Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection" [ref=e530] [cursor=pointer]':
+                      - generic [ref=e531]:
+                        - img [ref=e532]
+                        - generic: "Save this event: Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection"
+                    - 'button "Share this event: Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection" [ref=e535] [cursor=pointer]':
+                      - generic [ref=e536]:
+                        - img [ref=e537]
+                        - generic: "Share this event: Pop-Up Vocal Jam Session | FEBRUARY| A Night Of Music And Connection"
+              - generic [ref=e542]:
+                - link "View Back in the \"DAY\" Party" [ref=e543] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/back-in-the-day-party-tickets-1982366294952?aff=ebdssbcitybrowse
+                  - img "Back in the \"DAY\" Party primary image" [ref=e545]
+                - generic [ref=e547]:
+                  - complementary [ref=e548]:
+                    - paragraph [ref=e550]: Almost full
+                  - link "View Back in the \"DAY\" Party" [ref=e551] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/back-in-the-day-party-tickets-1982366294952?aff=ebdssbcitybrowse
+                    - heading "Back in the \"DAY\" Party" [level=3] [ref=e552]
+                  - paragraph [ref=e553]: Saturday • 3:00 PM
+                  - paragraph [ref=e554]: "\"SPANGALANG\""
+                  - paragraph [ref=e556]: Check ticket price on event
+                  - generic [ref=e557]:
+                    - 'button "Save this event: Back in the \"DAY\" Party" [ref=e559] [cursor=pointer]':
+                      - generic [ref=e560]:
+                        - img [ref=e561]
+                        - generic: "Save this event: Back in the \"DAY\" Party"
+                    - 'button "Share this event: Back in the \"DAY\" Party" [ref=e564] [cursor=pointer]':
+                      - generic [ref=e565]:
+                        - img [ref=e566]
+                        - generic: "Share this event: Back in the \"DAY\" Party"
+              - generic [ref=e571]:
+                - link "View Spring Exhibitions Opening Celebration" [ref=e572] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/spring-exhibitions-opening-celebration-tickets-1978660195910?aff=ebdssbcitybrowse
+                  - img "Spring Exhibitions Opening Celebration primary image" [ref=e574]
+                - generic [ref=e576]:
+                  - link "View Spring Exhibitions Opening Celebration" [ref=e577] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/spring-exhibitions-opening-celebration-tickets-1978660195910?aff=ebdssbcitybrowse
+                    - heading "Spring Exhibitions Opening Celebration" [level=3] [ref=e578]
+                  - paragraph [ref=e579]: Thu, Mar 5 • 7:30 PM
+                  - paragraph [ref=e580]: Museum of Contemporary Art Denver
+                  - paragraph [ref=e582]: Check ticket price on event
+                  - generic [ref=e583]:
+                    - 'button "Save this event: Spring Exhibitions Opening Celebration" [ref=e585] [cursor=pointer]':
+                      - generic [ref=e586]:
+                        - img [ref=e587]
+                        - generic: "Save this event: Spring Exhibitions Opening Celebration"
+                    - 'button "Share this event: Spring Exhibitions Opening Celebration" [ref=e590] [cursor=pointer]':
+                      - generic [ref=e591]:
+                        - img [ref=e592]
+                        - generic: "Share this event: Spring Exhibitions Opening Celebration"
+              - generic [ref=e597]:
+                - link "View 2026 WTS Colorado Annual Awards Gala" [ref=e598] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/2026-wts-colorado-annual-awards-gala-tickets-1982526680670?aff=ebdssbcitybrowse
+                  - img "2026 WTS Colorado Annual Awards Gala primary image" [ref=e600]
+                - generic [ref=e602]:
+                  - link "View 2026 WTS Colorado Annual Awards Gala" [ref=e603] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/2026-wts-colorado-annual-awards-gala-tickets-1982526680670?aff=ebdssbcitybrowse
+                    - heading "2026 WTS Colorado Annual Awards Gala" [level=3] [ref=e604]
+                  - paragraph [ref=e605]: Thu, Mar 5 • 5:00 PM
+                  - paragraph [ref=e606]: Wynkoop Brewing Company
+                  - paragraph [ref=e608]: Check ticket price on event
+                  - generic [ref=e609]:
+                    - 'button "Save this event: 2026 WTS Colorado Annual Awards Gala" [ref=e611] [cursor=pointer]':
+                      - generic [ref=e612]:
+                        - img [ref=e613]
+                        - generic: "Save this event: 2026 WTS Colorado Annual Awards Gala"
+                    - 'button "Share this event: 2026 WTS Colorado Annual Awards Gala" [ref=e616] [cursor=pointer]':
+                      - generic [ref=e617]:
+                        - img [ref=e618]
+                        - generic: "Share this event: 2026 WTS Colorado Annual Awards Gala"
+              - generic [ref=e623]:
+                - link "View KW Colorado Regional Awards Breakfast" [ref=e624] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/kw-colorado-regional-awards-breakfast-tickets-1981049740101?aff=ebdssbcitybrowse
+                  - img "KW Colorado Regional Awards Breakfast primary image" [ref=e626]
+                - generic [ref=e628]:
+                  - complementary [ref=e629]:
+                    - paragraph [ref=e631]: Almost full
+                  - link "View KW Colorado Regional Awards Breakfast" [ref=e632] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/kw-colorado-regional-awards-breakfast-tickets-1981049740101?aff=ebdssbcitybrowse
+                    - heading "KW Colorado Regional Awards Breakfast" [level=3] [ref=e633]
+                  - paragraph [ref=e634]: Fri, Mar 6 • 9:00 AM
+                  - paragraph [ref=e635]: The Ritz-Carlton, Denver
+                  - paragraph [ref=e637]: Check ticket price on event
+                  - generic [ref=e638]:
+                    - 'button "Save this event: KW Colorado Regional Awards Breakfast" [ref=e640] [cursor=pointer]':
+                      - generic [ref=e641]:
+                        - img [ref=e642]
+                        - generic: "Save this event: KW Colorado Regional Awards Breakfast"
+                    - 'button "Share this event: KW Colorado Regional Awards Breakfast" [ref=e645] [cursor=pointer]':
+                      - generic [ref=e646]:
+                        - img [ref=e647]
+                        - generic: "Share this event: KW Colorado Regional Awards Breakfast"
+              - generic [ref=e652]:
+                - link "View VisualDx AAD Reception" [ref=e653] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/visualdx-aad-reception-tickets-1981878613283?aff=ebdssbcitybrowse
+                  - img "VisualDx AAD Reception primary image" [ref=e655]
+                - generic [ref=e657]:
+                  - link "View VisualDx AAD Reception" [ref=e658] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/visualdx-aad-reception-tickets-1981878613283?aff=ebdssbcitybrowse
+                    - heading "VisualDx AAD Reception" [level=3] [ref=e659]
+                  - paragraph [ref=e660]: Sat, Mar 28 • 5:00 PM
+                  - paragraph [ref=e661]: Dazzle Denver
+                  - paragraph [ref=e663]: Check ticket price on event
+                  - generic [ref=e664]:
+                    - 'button "Save this event: VisualDx AAD Reception" [ref=e666] [cursor=pointer]':
+                      - generic [ref=e667]:
+                        - img [ref=e668]
+                        - generic: "Save this event: VisualDx AAD Reception"
+                    - 'button "Share this event: VisualDx AAD Reception" [ref=e671] [cursor=pointer]':
+                      - generic [ref=e672]:
+                        - img [ref=e673]
+                        - generic: "Share this event: VisualDx AAD Reception"
+          - generic [ref=e680]:
+            - generic [ref=e681]:
+              - heading "See more Online Events" [level=2] [ref=e683]:
+                - link "See more Online Events" [ref=e684] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/d/online/all-events/
+                  - text: Online Events
+              - link "See more Online Events" [ref=e685] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/online/all-events/
+                - text: Explore more events
+                - img [ref=e687]
+            - generic [ref=e690]:
+              - generic [ref=e693]:
+                - 'link "View Speed Networking: Virtual Event" [ref=e694] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/speed-networking-virtual-event-tickets-1553399231919?aff=ebdssbcitybrowse
+                  - 'img "Speed Networking: Virtual Event primary image" [ref=e696]'
+                - generic [ref=e698]:
+                  - 'link "View Speed Networking: Virtual Event" [ref=e699] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/speed-networking-virtual-event-tickets-1553399231919?aff=ebdssbcitybrowse
+                    - 'heading "Speed Networking: Virtual Event" [level=3] [ref=e700]'
+                  - paragraph [ref=e701]: Today • 10:00 AM MST
+                  - paragraph [ref=e703]: Check ticket price on event
+                  - generic [ref=e704]:
+                    - 'button "Save this event: Speed Networking: Virtual Event" [ref=e706] [cursor=pointer]':
+                      - generic [ref=e707]:
+                        - img [ref=e708]
+                        - generic: "Save this event: Speed Networking: Virtual Event"
+                    - 'button "Share this event: Speed Networking: Virtual Event" [ref=e711] [cursor=pointer]':
+                      - generic [ref=e712]:
+                        - img [ref=e713]
+                        - generic: "Share this event: Speed Networking: Virtual Event"
+              - generic [ref=e718]:
+                - 'link "View Career Fair: Exclusive Tech Hiring Event-New Tickets Available" [ref=e719] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse
+                  - 'img "Career Fair: Exclusive Tech Hiring Event-New Tickets Available primary image" [ref=e721]'
+                - generic [ref=e723]:
+                  - complementary [ref=e724]:
+                    - paragraph [ref=e726]: Going fast
+                  - 'link "View Career Fair: Exclusive Tech Hiring Event-New Tickets Available" [ref=e727] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse
+                    - 'heading "Career Fair: Exclusive Tech Hiring Event-New Tickets Available" [level=3] [ref=e728]'
+                  - paragraph [ref=e729]: Tomorrow • 10:00 AM MST
+                  - paragraph [ref=e731]: Check ticket price on event
+                  - generic [ref=e732]:
+                    - 'button "Save this event: Career Fair: Exclusive Tech Hiring Event-New Tickets Available" [ref=e734] [cursor=pointer]':
+                      - generic [ref=e735]:
+                        - img [ref=e736]
+                        - generic: "Save this event: Career Fair: Exclusive Tech Hiring Event-New Tickets Available"
+                    - 'button "Share this event: Career Fair: Exclusive Tech Hiring Event-New Tickets Available" [ref=e739] [cursor=pointer]':
+                      - generic [ref=e740]:
+                        - img [ref=e741]
+                        - generic: "Share this event: Career Fair: Exclusive Tech Hiring Event-New Tickets Available"
+              - generic [ref=e746]:
+                - 'link "View The Alamo: 2004 - Film History Livestream" [ref=e747] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/the-alamo-2004-film-history-livestream-tickets-1066589661389?aff=ebdssbcitybrowse
+                  - 'img "The Alamo: 2004 - Film History Livestream primary image" [ref=e749]'
+                - generic [ref=e751]:
+                  - complementary [ref=e752]:
+                    - paragraph [ref=e754]: Going fast
+                  - 'link "View The Alamo: 2004 - Film History Livestream" [ref=e755] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/the-alamo-2004-film-history-livestream-tickets-1066589661389?aff=ebdssbcitybrowse
+                    - 'heading "The Alamo: 2004 - Film History Livestream" [level=3] [ref=e756]'
+                  - paragraph [ref=e757]: Tomorrow • 6:00 PM MST
+                  - paragraph [ref=e759]: Check ticket price on event
+                  - generic [ref=e760]:
+                    - 'button "Save this event: The Alamo: 2004 - Film History Livestream" [ref=e762] [cursor=pointer]':
+                      - generic [ref=e763]:
+                        - img [ref=e764]
+                        - generic: "Save this event: The Alamo: 2004 - Film History Livestream"
+                    - 'button "Share this event: The Alamo: 2004 - Film History Livestream" [ref=e767] [cursor=pointer]':
+                      - generic [ref=e768]:
+                        - img [ref=e769]
+                        - generic: "Share this event: The Alamo: 2004 - Film History Livestream"
+              - generic [ref=e774]:
+                - link "View HHS Industry Power Hour Focused on NIH" [ref=e775] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/hhs-industry-power-hour-focused-on-nih-tickets-1978922851520?aff=ebdssbcitybrowse
+                  - img "HHS Industry Power Hour Focused on NIH primary image" [ref=e777]
+                - generic [ref=e779]:
+                  - complementary [ref=e780]:
+                    - paragraph [ref=e782]: Almost full
+                  - link "View HHS Industry Power Hour Focused on NIH" [ref=e783] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/hhs-industry-power-hour-focused-on-nih-tickets-1978922851520?aff=ebdssbcitybrowse
+                    - heading "HHS Industry Power Hour Focused on NIH" [level=3] [ref=e784]
+                  - paragraph [ref=e785]: Fri, Mar 6 • 10:05 AM MST
+                  - paragraph [ref=e787]: Check ticket price on event
+                  - generic [ref=e788]:
+                    - 'button "Save this event: HHS Industry Power Hour Focused on NIH" [ref=e790] [cursor=pointer]':
+                      - generic [ref=e791]:
+                        - img [ref=e792]
+                        - generic: "Save this event: HHS Industry Power Hour Focused on NIH"
+                    - 'button "Share this event: HHS Industry Power Hour Focused on NIH" [ref=e795] [cursor=pointer]':
+                      - generic [ref=e796]:
+                        - img [ref=e797]
+                        - generic: "Share this event: HHS Industry Power Hour Focused on NIH"
+              - generic [ref=e802]:
+                - link "View Great Patrons of the Italian Renaissance" [ref=e803] [cursor=pointer]:
+                  - /url: https://www.eventbrite.ca/e/great-patrons-of-the-italian-renaissance-tickets-1981018921923?aff=ebdssbcitybrowse
+                  - img "Great Patrons of the Italian Renaissance primary image" [ref=e805]
+                - generic [ref=e807]:
+                  - link "View Great Patrons of the Italian Renaissance" [ref=e808] [cursor=pointer]:
+                    - /url: https://www.eventbrite.ca/e/great-patrons-of-the-italian-renaissance-tickets-1981018921923?aff=ebdssbcitybrowse
+                    - heading "Great Patrons of the Italian Renaissance" [level=3] [ref=e809]
+                  - paragraph [ref=e810]: Fri, Mar 6 • 12:00 PM MST
+                  - paragraph [ref=e812]: Check ticket price on event
+                  - generic [ref=e813]:
+                    - 'button "Save this event: Great Patrons of the Italian Renaissance" [ref=e815] [cursor=pointer]':
+                      - generic [ref=e816]:
+                        - img [ref=e817]
+                        - generic: "Save this event: Great Patrons of the Italian Renaissance"
+                    - 'button "Share this event: Great Patrons of the Italian Renaissance" [ref=e820] [cursor=pointer]':
+                      - generic [ref=e821]:
+                        - img [ref=e822]
+                        - generic: "Share this event: Great Patrons of the Italian Renaissance"
+              - generic [ref=e827]:
+                - 'link "View FRDG Lecture: Key Concepts for Designing Housing that Lasts" [ref=e828] [cursor=pointer]':
+                  - /url: https://www.eventbrite.ca/e/frdg-lecture-key-concepts-for-designing-housing-that-lasts-tickets-1977721251502?aff=ebdssbcitybrowse
+                  - 'img "FRDG Lecture: Key Concepts for Designing Housing that Lasts primary image" [ref=e830]'
+                - generic [ref=e832]:
+                  - complementary [ref=e833]:
+                    - paragraph [ref=e835]: Almost full
+                  - 'link "View FRDG Lecture: Key Concepts for Designing Housing that Lasts" [ref=e836] [cursor=pointer]':
+                    - /url: https://www.eventbrite.ca/e/frdg-lecture-key-concepts-for-designing-housing-that-lasts-tickets-1977721251502?aff=ebdssbcitybrowse
+                    - 'heading "FRDG Lecture: Key Concepts for Designing Housing that Lasts" [level=3] [ref=e837]'
+                  - paragraph [ref=e838]: Tue, Mar 10 • 10:00 AM MDT
+                  - paragraph [ref=e840]: Check ticket price on event
+                  - generic [ref=e841]:
+                    - 'button "Save this event: FRDG Lecture: Key Concepts for Designing Housing that Lasts" [ref=e843] [cursor=pointer]':
+                      - generic [ref=e844]:
+                        - img [ref=e845]
+                        - generic: "Save this event: FRDG Lecture: Key Concepts for Designing Housing that Lasts"
+                    - 'button "Share this event: FRDG Lecture: Key Concepts for Designing Housing that Lasts" [ref=e848] [cursor=pointer]':
+                      - generic [ref=e849]:
+                        - img [ref=e850]
+                        - generic: "Share this event: FRDG Lecture: Key Concepts for Designing Housing that Lasts"
+              - generic [ref=e855]:
+                - 'link "View Plan Partners: Webinar | A complete guide to Short Term Respite (STR)" [ref=e856] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com.au/e/plan-partners-webinar-a-complete-guide-to-short-term-respite-str-tickets-1983056693954?aff=ebdssbcitybrowse
+                  - 'img "Plan Partners: Webinar | A complete guide to Short Term Respite (STR) primary image" [ref=e858]'
+                - generic [ref=e860]:
+                  - complementary [ref=e861]:
+                    - paragraph [ref=e863]: Almost full
+                  - 'link "View Plan Partners: Webinar | A complete guide to Short Term Respite (STR)" [ref=e864] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com.au/e/plan-partners-webinar-a-complete-guide-to-short-term-respite-str-tickets-1983056693954?aff=ebdssbcitybrowse
+                    - 'heading "Plan Partners: Webinar | A complete guide to Short Term Respite (STR)" [level=3] [ref=e865]'
+                  - paragraph [ref=e866]: Wed, Mar 11 • 7:00 PM MDT
+                  - paragraph [ref=e868]: Check ticket price on event
+                  - generic [ref=e869]:
+                    - 'button "Save this event: Plan Partners: Webinar | A complete guide to Short Term Respite (STR)" [ref=e871] [cursor=pointer]':
+                      - generic [ref=e872]:
+                        - img [ref=e873]
+                        - generic: "Save this event: Plan Partners: Webinar | A complete guide to Short Term Respite (STR)"
+                    - 'button "Share this event: Plan Partners: Webinar | A complete guide to Short Term Respite (STR)" [ref=e876] [cursor=pointer]':
+                      - generic [ref=e877]:
+                        - img [ref=e878]
+                        - generic: "Share this event: Plan Partners: Webinar | A complete guide to Short Term Respite (STR)"
+              - generic [ref=e883]:
+                - link "View Black Girl Book Fair!" [ref=e884] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse
+                  - img "Black Girl Book Fair! primary image" [ref=e886]
+                - generic [ref=e888]:
+                  - complementary [ref=e889]:
+                    - paragraph [ref=e891]: Going fast
+                  - link "View Black Girl Book Fair!" [ref=e892] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse
+                    - heading "Black Girl Book Fair!" [level=3] [ref=e893]
+                  - paragraph [ref=e894]: Sat, Apr 25 • 11:00 AM MDT
+                  - paragraph [ref=e896]: Check ticket price on event
+                  - generic [ref=e897]:
+                    - 'button "Save this event: Black Girl Book Fair!" [ref=e899] [cursor=pointer]':
+                      - generic [ref=e900]:
+                        - img [ref=e901]
+                        - generic: "Save this event: Black Girl Book Fair!"
+                    - 'button "Share this event: Black Girl Book Fair!" [ref=e904] [cursor=pointer]':
+                      - generic [ref=e905]:
+                        - img [ref=e906]
+                        - generic: "Share this event: Black Girl Book Fair!"
+          - generic [ref=e916]:
+            - generic [ref=e917]:
+              - heading "See more This Weekend" [level=2] [ref=e919]:
+                - link "See more This Weekend" [ref=e920] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/d/co--denver/events--this-weekend/
+                  - text: This Weekend
+              - link "See more This Weekend" [ref=e921] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/co--denver/events--this-weekend/
+                - text: Explore more events
+                - img [ref=e923]
+            - generic [ref=e926]:
+              - generic [ref=e929]:
+                - link "View Denver Speed Dating for Singles Age 40s/50s ♥ Colorado" [ref=e930] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/denver-speed-dating-for-singles-age-40s50s-colorado-tickets-1978063251433?aff=ebdssbcitybrowse
+                  - img "Denver Speed Dating for Singles Age 40s/50s ♥ Colorado primary image" [ref=e932]
+                - generic [ref=e934]:
+                  - complementary [ref=e935]:
+                    - paragraph [ref=e937]: Sales end soon
+                  - link "View Denver Speed Dating for Singles Age 40s/50s ♥ Colorado" [ref=e938] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/denver-speed-dating-for-singles-age-40s50s-colorado-tickets-1978063251433?aff=ebdssbcitybrowse
+                    - heading "Denver Speed Dating for Singles Age 40s/50s ♥ Colorado" [level=3] [ref=e939]
+                  - paragraph [ref=e940]: Tomorrow • 6:30 PM
+                  - paragraph [ref=e941]: Left Hand RiNo Drinks & Eats
+                  - paragraph [ref=e943]: Check ticket price on event
+                  - generic [ref=e944]:
+                    - 'button "Save this event: Denver Speed Dating for Singles Age 40s/50s ♥ Colorado" [ref=e946] [cursor=pointer]':
+                      - generic [ref=e947]:
+                        - img [ref=e948]
+                        - generic: "Save this event: Denver Speed Dating for Singles Age 40s/50s ♥ Colorado"
+                    - 'button "Share this event: Denver Speed Dating for Singles Age 40s/50s ♥ Colorado" [ref=e951] [cursor=pointer]':
+                      - generic [ref=e952]:
+                        - img [ref=e953]
+                        - generic: "Share this event: Denver Speed Dating for Singles Age 40s/50s ♥ Colorado"
+              - generic [ref=e958]:
+                - link "View Thrift & Tinis" [ref=e959] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/thrift-tinis-tickets-1981459516754?aff=ebdssbcitybrowse
+                  - img "Thrift & Tinis primary image" [ref=e961]
+                - generic [ref=e963]:
+                  - complementary [ref=e964]:
+                    - paragraph [ref=e966]: Almost full
+                  - link "View Thrift & Tinis" [ref=e967] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/thrift-tinis-tickets-1981459516754?aff=ebdssbcitybrowse
+                    - heading "Thrift & Tinis" [level=3] [ref=e968]
+                  - paragraph [ref=e969]: Saturday • 1:00 PM
+                  - paragraph [ref=e970]: The Maven Hotel at Dairy Block
+                  - paragraph [ref=e972]: Check ticket price on event
+                  - generic [ref=e973]:
+                    - 'button "Save this event: Thrift & Tinis" [ref=e975] [cursor=pointer]':
+                      - generic [ref=e976]:
+                        - img [ref=e977]
+                        - generic: "Save this event: Thrift & Tinis"
+                    - 'button "Share this event: Thrift & Tinis" [ref=e980] [cursor=pointer]':
+                      - generic [ref=e981]:
+                        - img [ref=e982]
+                        - generic: "Share this event: Thrift & Tinis"
+              - generic [ref=e987]:
+                - link "View ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel" [ref=e988] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/parhopper-2-person-golf-scramble-sponsored-by-branch-barrel-tickets-1982820273815?aff=ebdssbcitybrowse
+                  - img "ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel primary image" [ref=e990]
+                - generic [ref=e992]:
+                  - complementary [ref=e993]:
+                    - paragraph [ref=e995]: Almost full
+                  - link "View ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel" [ref=e996] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/parhopper-2-person-golf-scramble-sponsored-by-branch-barrel-tickets-1982820273815?aff=ebdssbcitybrowse
+                    - heading "ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel" [level=3] [ref=e997]
+                  - paragraph [ref=e998]: Saturday • 11:00 AM
+                  - paragraph [ref=e999]: 3503 Brighton Blvd
+                  - paragraph [ref=e1001]: Check ticket price on event
+                  - generic [ref=e1002]:
+                    - 'button "Save this event: ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel" [ref=e1004] [cursor=pointer]':
+                      - generic [ref=e1005]:
+                        - img [ref=e1006]
+                        - generic: "Save this event: ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel"
+                    - 'button "Share this event: ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel" [ref=e1009] [cursor=pointer]':
+                      - generic [ref=e1010]:
+                        - img [ref=e1011]
+                        - generic: "Share this event: ParHopper 2-Person Golf Scramble Sponsored By Branch & Barrel"
+              - generic [ref=e1016]:
+                - link "View Colorado Cello Summit 2026" [ref=e1017] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/colorado-cello-summit-2026-tickets-1974496275512?aff=ebdssbcitybrowse
+                  - img "Colorado Cello Summit 2026 primary image" [ref=e1019]
+                - generic [ref=e1021]:
+                  - complementary [ref=e1022]:
+                    - paragraph [ref=e1024]: Going fast
+                  - link "View Colorado Cello Summit 2026" [ref=e1025] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/colorado-cello-summit-2026-tickets-1974496275512?aff=ebdssbcitybrowse
+                    - heading "Colorado Cello Summit 2026" [level=3] [ref=e1026]
+                  - paragraph [ref=e1027]: Saturday • 9:00 AM
+                  - paragraph [ref=e1028]: King Center, Metro State University.
+                  - paragraph [ref=e1030]: Check ticket price on event
+                  - generic [ref=e1031]:
+                    - 'button "Save this event: Colorado Cello Summit 2026" [ref=e1033] [cursor=pointer]':
+                      - generic [ref=e1034]:
+                        - img [ref=e1035]
+                        - generic: "Save this event: Colorado Cello Summit 2026"
+                    - 'button "Share this event: Colorado Cello Summit 2026" [ref=e1038] [cursor=pointer]':
+                      - generic [ref=e1039]:
+                        - img [ref=e1040]
+                        - generic: "Share this event: Colorado Cello Summit 2026"
+              - generic [ref=e1045]:
+                - link "View Wild Femme Women's Circle" [ref=e1046] [cursor=pointer]:
+                  - /url: https://www.eventbrite.com/e/wild-femme-womens-circle-tickets-1981866480995?aff=ebdssbcitybrowse
+                  - img "Wild Femme Women's Circle primary image" [ref=e1048]
+                - generic [ref=e1050]:
+                  - complementary [ref=e1051]:
+                    - paragraph [ref=e1053]: Almost full
+                  - link "View Wild Femme Women's Circle" [ref=e1054] [cursor=pointer]:
+                    - /url: https://www.eventbrite.com/e/wild-femme-womens-circle-tickets-1981866480995?aff=ebdssbcitybrowse
+                    - heading "Wild Femme Women's Circle" [level=3] [ref=e1055]
+                  - paragraph [ref=e1056]: Saturday • 12:30 PM
+                  - paragraph [ref=e1057]: Sakala
+                  - paragraph [ref=e1059]: Check ticket price on event
+                  - generic [ref=e1060]:
+                    - 'button "Save this event: Wild Femme Women''s Circle" [ref=e1062] [cursor=pointer]':
+                      - generic [ref=e1063]:
+                        - img [ref=e1064]
+                        - generic: "Save this event: Wild Femme Women's Circle"
+                    - 'button "Share this event: Wild Femme Women''s Circle" [ref=e1067] [cursor=pointer]':
+                      - generic [ref=e1068]:
+                        - img [ref=e1069]
+                        - generic: "Share this event: Wild Femme Women's Circle"
+              - generic [ref=e1074]:
+                - 'link "View The Life We Have: 5k, Brunch + Film Screening" [ref=e1075] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/the-life-we-have-5k-brunch-film-screening-tickets-1982196010627?aff=ebdssbcitybrowse
+                  - 'img "The Life We Have: 5k, Brunch + Film Screening primary image" [ref=e1077]'
+                - generic [ref=e1079]:
+                  - complementary [ref=e1080]:
+                    - paragraph [ref=e1082]: Almost full
+                  - 'link "View The Life We Have: 5k, Brunch + Film Screening" [ref=e1083] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/the-life-we-have-5k-brunch-film-screening-tickets-1982196010627?aff=ebdssbcitybrowse
+                    - 'heading "The Life We Have: 5k, Brunch + Film Screening" [level=3] [ref=e1084]'
+                  - paragraph [ref=e1085]: Sunday • 8:30 AM
+                  - paragraph [ref=e1086]: REI
+                  - paragraph [ref=e1088]: Check ticket price on event
+                  - generic [ref=e1089]:
+                    - 'button "Save this event: The Life We Have: 5k, Brunch + Film Screening" [ref=e1091] [cursor=pointer]':
+                      - generic [ref=e1092]:
+                        - img [ref=e1093]
+                        - generic: "Save this event: The Life We Have: 5k, Brunch + Film Screening"
+                    - 'button "Share this event: The Life We Have: 5k, Brunch + Film Screening" [ref=e1096] [cursor=pointer]':
+                      - generic [ref=e1097]:
+                        - img [ref=e1098]
+                        - generic: "Share this event: The Life We Have: 5k, Brunch + Film Screening"
+              - generic [ref=e1103]:
+                - 'link "View THRIFT AND THRIVE: A Clothing Swap Soiree!" [ref=e1104] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/thrift-and-thrive-a-clothing-swap-soiree-tickets-1979788694279?aff=ebdssbcitybrowse
+                  - 'img "THRIFT AND THRIVE: A Clothing Swap Soiree! primary image" [ref=e1106]'
+                - generic [ref=e1108]:
+                  - complementary [ref=e1109]:
+                    - paragraph [ref=e1111]: Sales end soon
+                  - 'link "View THRIFT AND THRIVE: A Clothing Swap Soiree!" [ref=e1112] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/thrift-and-thrive-a-clothing-swap-soiree-tickets-1979788694279?aff=ebdssbcitybrowse
+                    - 'heading "THRIFT AND THRIVE: A Clothing Swap Soiree!" [level=3] [ref=e1113]'
+                  - paragraph [ref=e1114]: Sunday • 2:00 PM
+                  - paragraph [ref=e1115]: milehimodern
+                  - paragraph [ref=e1117]: Check ticket price on event
+                  - generic [ref=e1118]:
+                    - 'button "Save this event: THRIFT AND THRIVE: A Clothing Swap Soiree!" [ref=e1120] [cursor=pointer]':
+                      - generic [ref=e1121]:
+                        - img [ref=e1122]
+                        - generic: "Save this event: THRIFT AND THRIVE: A Clothing Swap Soiree!"
+                    - 'button "Share this event: THRIFT AND THRIVE: A Clothing Swap Soiree!" [ref=e1125] [cursor=pointer]':
+                      - generic [ref=e1126]:
+                        - img [ref=e1127]
+                        - generic: "Share this event: THRIFT AND THRIVE: A Clothing Swap Soiree!"
+              - generic [ref=e1132]:
+                - 'link "View IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver" [ref=e1133] [cursor=pointer]':
+                  - /url: https://www.eventbrite.com/e/idol-worship-an-evening-with-mink-stole-peaches-christ-in-denver-tickets-1977137711117?aff=ebdssbcitybrowse
+                  - 'img "IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver primary image" [ref=e1135]'
+                - generic [ref=e1137]:
+                  - complementary [ref=e1138]:
+                    - paragraph [ref=e1140]: Going fast
+                  - 'link "View IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver" [ref=e1141] [cursor=pointer]':
+                    - /url: https://www.eventbrite.com/e/idol-worship-an-evening-with-mink-stole-peaches-christ-in-denver-tickets-1977137711117?aff=ebdssbcitybrowse
+                    - 'heading "IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver" [level=3] [ref=e1142]'
+                  - paragraph [ref=e1143]: Sunday • 7:00 PM
+                  - paragraph [ref=e1144]: The Bug Theatre
+                  - paragraph [ref=e1146]: Check ticket price on event
+                  - generic [ref=e1147]:
+                    - 'button "Save this event: IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver" [ref=e1149] [cursor=pointer]':
+                      - generic [ref=e1150]:
+                        - img [ref=e1151]
+                        - generic: "Save this event: IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver"
+                    - 'button "Share this event: IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver" [ref=e1154] [cursor=pointer]':
+                      - generic [ref=e1155]:
+                        - img [ref=e1156]
+                        - generic: "Share this event: IDOL WORSHIP: An Evening with Mink Stole & Peaches Christ in Denver"
+          - generic [ref=e1198]:
+            - link "Things to do around Denver" [ref=e1199] [cursor=pointer]:
+              - /url: /ttd/co--denver/
+              - heading "Things to do around Denver" [level=2] [ref=e1200]
+            - generic [ref=e1201]:
+              - generic [ref=e1202]:
+                - generic [ref=e1204] [cursor=pointer]:
+                  - link "Things to do in Colorado Springs" [ref=e1205]:
+                    - /url: https://www.eventbrite.com/ttd/co--colorado-springs/
+                  - link "Explore Things to do in Colorado Springs" [ref=e1206]:
+                    - /url: https://www.eventbrite.com/ttd/co--colorado-springs/
+                    - img [ref=e1207]
+                - generic [ref=e1210] [cursor=pointer]:
+                  - link "Things to do in Fort Collins" [ref=e1211]:
+                    - /url: https://www.eventbrite.com/ttd/co--fort-collins/
+                  - link "Explore Things to do in Fort Collins" [ref=e1212]:
+                    - /url: https://www.eventbrite.com/ttd/co--fort-collins/
+                    - img [ref=e1213]
+                - generic [ref=e1216] [cursor=pointer]:
+                  - link "Things to do in Applewood" [ref=e1217]:
+                    - /url: https://www.eventbrite.com/ttd/co--applewood/
+                  - link "Explore Things to do in Applewood" [ref=e1218]:
+                    - /url: https://www.eventbrite.com/ttd/co--applewood/
+                    - img [ref=e1219]
+                - generic [ref=e1222] [cursor=pointer]:
+                  - link "Things to do in Boulder" [ref=e1223]:
+                    - /url: https://www.eventbrite.com/ttd/co--boulder/
+                  - link "Explore Things to do in Boulder" [ref=e1224]:
+                    - /url: https://www.eventbrite.com/ttd/co--boulder/
+                    - img [ref=e1225]
+                - generic [ref=e1228] [cursor=pointer]:
+                  - link "Things to do in Aurora" [ref=e1229]:
+                    - /url: https://www.eventbrite.com/ttd/co--aurora/
+                  - link "Explore Things to do in Aurora" [ref=e1230]:
+                    - /url: https://www.eventbrite.com/ttd/co--aurora/
+                    - img [ref=e1231]
+                - generic [ref=e1234] [cursor=pointer]:
+                  - link "Things to do in Lakewood" [ref=e1235]:
+                    - /url: https://www.eventbrite.com/ttd/co--lakewood/
+                  - link "Explore Things to do in Lakewood" [ref=e1236]:
+                    - /url: https://www.eventbrite.com/ttd/co--lakewood/
+                    - img [ref=e1237]
+              - generic [ref=e1239]:
+                - generic [ref=e1241] [cursor=pointer]:
+                  - link "Things to do in Greenwood Village" [ref=e1242]:
+                    - /url: https://www.eventbrite.com/ttd/co--greenwood-village/
+                  - link "Explore Things to do in Greenwood Village" [ref=e1243]:
+                    - /url: https://www.eventbrite.com/ttd/co--greenwood-village/
+                    - img [ref=e1244]
+                - generic [ref=e1247] [cursor=pointer]:
+                  - link "Things to do in Westminster" [ref=e1248]:
+                    - /url: https://www.eventbrite.com/ttd/co--westminster/
+                  - link "Explore Things to do in Westminster" [ref=e1249]:
+                    - /url: https://www.eventbrite.com/ttd/co--westminster/
+                    - img [ref=e1250]
+                - generic [ref=e1253] [cursor=pointer]:
+                  - link "Things to do in Arvada" [ref=e1254]:
+                    - /url: https://www.eventbrite.com/ttd/co--arvada/
+                  - link "Explore Things to do in Arvada" [ref=e1255]:
+                    - /url: https://www.eventbrite.com/ttd/co--arvada/
+                    - img [ref=e1256]
+                - generic [ref=e1259] [cursor=pointer]:
+                  - link "Things to do in Thornton" [ref=e1260]:
+                    - /url: https://www.eventbrite.com/ttd/co--thornton/
+                  - link "Explore Things to do in Thornton" [ref=e1261]:
+                    - /url: https://www.eventbrite.com/ttd/co--thornton/
+                    - img [ref=e1262]
+                - generic [ref=e1265] [cursor=pointer]:
+                  - link "Things to do in Broomfield" [ref=e1266]:
+                    - /url: https://www.eventbrite.com/ttd/co--broomfield/
+                  - link "Explore Things to do in Broomfield" [ref=e1267]:
+                    - /url: https://www.eventbrite.com/ttd/co--broomfield/
+                    - img [ref=e1268]
+                - generic [ref=e1271] [cursor=pointer]:
+                  - link "Things to do in Littleton" [ref=e1272]:
+                    - /url: https://www.eventbrite.com/ttd/co--littleton/
+                  - link "Explore Things to do in Littleton" [ref=e1273]:
+                    - /url: https://www.eventbrite.com/ttd/co--littleton/
+                    - img [ref=e1274]
+          - generic [ref=e1276]:
+            - heading "Points of Interest near Denver" [level=2] [ref=e1277]
+            - generic [ref=e1278]:
+              - generic [ref=e1279]:
+                - generic [ref=e1281] [cursor=pointer]:
+                  - link "Grant Frontier Park" [ref=e1282]:
+                    - /url: /poi/co--denver/grant-frontier-park--v58Xt/
+                  - link "Explore Grant Frontier Park" [ref=e1283]:
+                    - /url: /poi/co--denver/grant-frontier-park--v58Xt/
+                    - img [ref=e1284]
+                - generic [ref=e1287] [cursor=pointer]:
+                  - link "Civic Center Park" [ref=e1288]:
+                    - /url: /poi/co--denver/civic-center-park--kuEAY/
+                  - link "Explore Civic Center Park" [ref=e1289]:
+                    - /url: /poi/co--denver/civic-center-park--kuEAY/
+                    - img [ref=e1290]
+                - generic [ref=e1293] [cursor=pointer]:
+                  - link "Bear Creek Park" [ref=e1294]:
+                    - /url: /poi/co--denver/bear-creek-park--eWjGy/
+                  - link "Explore Bear Creek Park" [ref=e1295]:
+                    - /url: /poi/co--denver/bear-creek-park--eWjGy/
+                    - img [ref=e1296]
+                - generic [ref=e1299] [cursor=pointer]:
+                  - link "Bigsbys Folly Craft Winery Restaurant" [ref=e1300]:
+                    - /url: /poi/co--denver/bigsbys-folly-craft-winery-restaurant--AdHiM/
+                  - link "Explore Bigsbys Folly Craft Winery Restaurant" [ref=e1301]:
+                    - /url: /poi/co--denver/bigsbys-folly-craft-winery-restaurant--AdHiM/
+                    - img [ref=e1302]
+                - generic [ref=e1305] [cursor=pointer]:
+                  - link "History Colorado Center" [ref=e1306]:
+                    - /url: /poi/co--denver/history-colorado-center--6jDue/
+                  - link "Explore History Colorado Center" [ref=e1307]:
+                    - /url: /poi/co--denver/history-colorado-center--6jDue/
+                    - img [ref=e1308]
+                - generic [ref=e1311] [cursor=pointer]:
+                  - link "Redline Contemporary Art Center" [ref=e1312]:
+                    - /url: /poi/co--denver/redline-contemporary-art-center--s32CD/
+                  - link "Explore Redline Contemporary Art Center" [ref=e1313]:
+                    - /url: /poi/co--denver/redline-contemporary-art-center--s32CD/
+                    - img [ref=e1314]
+              - generic [ref=e1316]:
+                - generic [ref=e1318] [cursor=pointer]:
+                  - link "Benedict Fountain Park" [ref=e1319]:
+                    - /url: /poi/co--denver/benedict-fountain-park--meFp4/
+                  - link "Explore Benedict Fountain Park" [ref=e1320]:
+                    - /url: /poi/co--denver/benedict-fountain-park--meFp4/
+                    - img [ref=e1321]
+                - generic [ref=e1324] [cursor=pointer]:
+                  - link "Forney Museum Of Transportation" [ref=e1325]:
+                    - /url: /poi/co--denver/forney-museum-of-transportation--dtJfk/
+                  - link "Explore Forney Museum Of Transportation" [ref=e1326]:
+                    - /url: /poi/co--denver/forney-museum-of-transportation--dtJfk/
+                    - img [ref=e1327]
+                - generic [ref=e1330] [cursor=pointer]:
+                  - link "Denver Art Museum" [ref=e1331]:
+                    - /url: /poi/co--denver/denver-art-museum--xmqwX/
+                  - link "Explore Denver Art Museum" [ref=e1332]:
+                    - /url: /poi/co--denver/denver-art-museum--xmqwX/
+                    - img [ref=e1333]
+                - generic [ref=e1336] [cursor=pointer]:
+                  - link "Denver Museum Of Nature Science" [ref=e1337]:
+                    - /url: /poi/co--denver/denver-museum-of-nature-science--RNqYc/
+                  - link "Explore Denver Museum Of Nature Science" [ref=e1338]:
+                    - /url: /poi/co--denver/denver-museum-of-nature-science--RNqYc/
+                    - img [ref=e1339]
+                - generic [ref=e1342] [cursor=pointer]:
+                  - link "Coors Field" [ref=e1343]:
+                    - /url: /poi/co--denver/coors-field--oHOQi/
+                  - link "Explore Coors Field" [ref=e1344]:
+                    - /url: /poi/co--denver/coors-field--oHOQi/
+                    - img [ref=e1345]
+                - generic [ref=e1348] [cursor=pointer]:
+                  - link "Berkeley Lake Park" [ref=e1349]:
+                    - /url: /poi/co--denver/berkeley-lake-park--XEPp0/
+                  - link "Explore Berkeley Lake Park" [ref=e1350]:
+                    - /url: /poi/co--denver/berkeley-lake-park--XEPp0/
+                    - img [ref=e1351]
+              - generic [ref=e1353]:
+                - generic [ref=e1355] [cursor=pointer]:
+                  - link "Babi Yar Memorial Park" [ref=e1356]:
+                    - /url: /poi/co--denver/babi-yar-memorial-park--BroCj/
+                  - link "Explore Babi Yar Memorial Park" [ref=e1357]:
+                    - /url: /poi/co--denver/babi-yar-memorial-park--BroCj/
+                    - img [ref=e1358]
+                - generic [ref=e1361] [cursor=pointer]:
+                  - link "Clyfford Still Museum" [ref=e1362]:
+                    - /url: /poi/co--denver/clyfford-still-museum--pKs12/
+                  - link "Explore Clyfford Still Museum" [ref=e1363]:
+                    - /url: /poi/co--denver/clyfford-still-museum--pKs12/
+                    - img [ref=e1364]
+                - generic [ref=e1367] [cursor=pointer]:
+                  - link "Black American West Museum Heritage Center" [ref=e1368]:
+                    - /url: /poi/co--denver/black-american-west-museum-heritage-center--HQzJB/
+                  - link "Explore Black American West Museum Heritage Center" [ref=e1369]:
+                    - /url: /poi/co--denver/black-american-west-museum-heritage-center--HQzJB/
+                    - img [ref=e1370]
+                - generic [ref=e1373] [cursor=pointer]:
+                  - link "Kirkland Museum Of Fine Decorative Art" [ref=e1374]:
+                    - /url: /poi/co--denver/kirkland-museum-of-fine-decorative-art--exEi3/
+                  - link "Explore Kirkland Museum Of Fine Decorative Art" [ref=e1375]:
+                    - /url: /poi/co--denver/kirkland-museum-of-fine-decorative-art--exEi3/
+                    - img [ref=e1376]
+                - generic [ref=e1379] [cursor=pointer]:
+                  - link "Sunken Gardens Park" [ref=e1380]:
+                    - /url: /poi/co--denver/sunken-gardens-park--0GVoy/
+                  - link "Explore Sunken Gardens Park" [ref=e1381]:
+                    - /url: /poi/co--denver/sunken-gardens-park--0GVoy/
+                    - img [ref=e1382]
+                - generic [ref=e1385] [cursor=pointer]:
+                  - link "Denver Zoo" [ref=e1386]:
+                    - /url: /poi/co--denver/denver-zoo--3RK3y/
+                  - link "Explore Denver Zoo" [ref=e1387]:
+                    - /url: /poi/co--denver/denver-zoo--3RK3y/
+                    - img [ref=e1388]
+              - generic [ref=e1390]:
+                - generic [ref=e1392] [cursor=pointer]:
+                  - link "United States Mint" [ref=e1393]:
+                    - /url: /poi/co--denver/united-states-mint--IAUty/
+                  - link "Explore United States Mint" [ref=e1394]:
+                    - /url: /poi/co--denver/united-states-mint--IAUty/
+                    - img [ref=e1395]
+                - generic [ref=e1398] [cursor=pointer]:
+                  - link "Denver Firefighters Museum" [ref=e1399]:
+                    - /url: /poi/co--denver/denver-firefighters-museum--xjZrF/
+                  - link "Explore Denver Firefighters Museum" [ref=e1400]:
+                    - /url: /poi/co--denver/denver-firefighters-museum--xjZrF/
+                    - img [ref=e1401]
+    - contentinfo [ref=e1403]:
+      - heading "Site Navigation" [level=2]
+      - generic [ref=e1404]:
+        - generic [ref=e1405]:
+          - paragraph [ref=e1406]: Use Eventbrite
+          - list [ref=e1407]:
+            - listitem [ref=e1408]:
+              - link "Create Events" [ref=e1409] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/overview/
+            - listitem [ref=e1410]:
+              - link "Pricing" [ref=e1411] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/pricing/
+            - listitem [ref=e1412]:
+              - link "Event Marketing Platform" [ref=e1413] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/event-marketing-platform/
+            - listitem [ref=e1414]:
+              - link "Eventbrite Mobile Ticket App" [ref=e1415] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/l/eventbrite-app/
+            - listitem [ref=e1416]:
+              - link "Eventbrite Check-In App" [ref=e1417] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/organizer-check-in-app/
+            - listitem [ref=e1418]:
+              - link "Eventbrite App Marketplace" [ref=e1419] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/apps/
+            - listitem [ref=e1420]:
+              - link "Event Registration Software" [ref=e1421] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/registration-online/
+            - listitem [ref=e1422]:
+              - link "Community Guidelines" [ref=e1423] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/l/community-guidelines/
+            - listitem [ref=e1424]:
+              - link "FAQs" [ref=e1425] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/l/frequently-asked-questions/
+            - listitem [ref=e1426]:
+              - link "Sitemap" [ref=e1427] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/sitemap/
+        - generic [ref=e1428]:
+          - paragraph [ref=e1429]: Plan Events
+          - list [ref=e1430]:
+            - listitem [ref=e1431]:
+              - link "Sell Tickets Online" [ref=e1432] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/sell-tickets/
+            - listitem [ref=e1433]:
+              - link "Performing Arts Ticketing Software" [ref=e1434] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/event-industry/performing-arts/
+            - listitem [ref=e1435]:
+              - link "Sell Concert Tickets Online" [ref=e1436] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/event-type/music-venues/
+            - listitem [ref=e1437]:
+              - link "Event Payment System" [ref=e1438] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/event-payment/
+            - listitem [ref=e1439]:
+              - link "Solutions for Professional Services" [ref=e1440] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/event-industry/professional-services/
+            - listitem [ref=e1441]:
+              - link "Event Management Software" [ref=e1442] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/event-management-software/
+            - listitem [ref=e1443]:
+              - link "Halloween Party Planning" [ref=e1444] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/event-type/halloween-event/
+            - listitem [ref=e1445]:
+              - link "Virtual Events Platform" [ref=e1446] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/event-type/virtual-events-platform/
+            - listitem [ref=e1447]:
+              - link "QR Codes for Event Check-In" [ref=e1448] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/how-to-use-qr-codes-for-events/
+            - listitem [ref=e1449]:
+              - link "Post your event online" [ref=e1450] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/features/post-events/
+        - generic [ref=e1451]:
+          - paragraph [ref=e1452]: Find Events
+          - list [ref=e1453]:
+            - listitem [ref=e1454]:
+              - link "New Orleans Food & Drink Events" [ref=e1455] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/b/la--new-orleans/food-and-drink/
+            - listitem [ref=e1456]:
+              - link "San Francisco Holiday Events" [ref=e1457] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/b/ca--san-francisco/holiday/
+            - listitem [ref=e1458]:
+              - link "Tulum Music Events" [ref=e1459] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/b/mexico--tulum/music/
+            - listitem [ref=e1460]:
+              - link "Denver Hobby Events" [ref=e1461] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/b/co--denver/hobbies/
+            - listitem [ref=e1462]:
+              - link "Atlanta Pop Music Events" [ref=e1463] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/b/ga--atlanta/music/pop/
+            - listitem [ref=e1464]:
+              - link "New York Events" [ref=e1465] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/ny--new-york/events/
+            - listitem [ref=e1466]:
+              - link "Chicago Events" [ref=e1467] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/il--chicago/events/
+            - listitem [ref=e1468]:
+              - link "Events in Dallas Today" [ref=e1469] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/tx--dallas/events--today/
+            - listitem [ref=e1470]:
+              - link "Los Angeles Events" [ref=e1471] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/ca--los-angeles/events/
+            - listitem [ref=e1472]:
+              - link "Washington Events" [ref=e1473] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/d/dc--washington/events/
+        - generic [ref=e1474]:
+          - paragraph [ref=e1475]: Connect With Us
+          - list [ref=e1476]:
+            - listitem [ref=e1477]:
+              - link "Contact Support" [ref=e1478] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/help/en-us/contact-us/
+            - listitem [ref=e1479]:
+              - link "Contact Sales" [ref=e1480] [cursor=pointer]:
+                - /url: https://www.eventbrite.com/organizer/contact-sales/
+            - listitem [ref=e1481]:
+              - link "X" [ref=e1482] [cursor=pointer]:
+                - /url: https://www.x.com/eventbritehelp
+            - listitem [ref=e1483]:
+              - link "Facebook" [ref=e1484] [cursor=pointer]:
+                - /url: https://www.facebook.com/Eventbrite
+            - listitem [ref=e1485]:
+              - link "LinkedIn" [ref=e1486] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/eventbrite
+            - listitem [ref=e1487]:
+              - link "Instagram" [ref=e1488] [cursor=pointer]:
+                - /url: https://www.instagram.com/eventbrite
+            - listitem [ref=e1489]:
+              - link "TikTok" [ref=e1490] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@eventbrite
+      - generic [ref=e1491]:
+        - generic [ref=e1492]: © 2026 Eventbrite
+        - list [ref=e1494]:
+          - text: ● ● ●
+          - listitem [ref=e1495]:
+            - link "About" [ref=e1496] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/about/
+            - text: ●
+          - listitem [ref=e1497]:
+            - link "Blog" [ref=e1498] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/blog/
+            - text: ●
+          - listitem [ref=e1499]:
+            - link "Help" [ref=e1500] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/help/en-us/
+            - text: ●
+          - listitem [ref=e1501]:
+            - link "Careers" [ref=e1502] [cursor=pointer]:
+              - /url: https://www.eventbritecareers.com/
+            - text: ●
+          - listitem [ref=e1503]:
+            - link "Press" [ref=e1504] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/blog/press/
+            - text: ●
+          - listitem [ref=e1505]:
+            - link "Impact" [ref=e1506] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/l/impact/
+            - text: ●
+          - listitem [ref=e1507]:
+            - link "Investors" [ref=e1508] [cursor=pointer]:
+              - /url: https://investor.eventbrite.com/overview/default.aspx
+            - text: ●
+          - listitem [ref=e1509]:
+            - link "Security" [ref=e1510] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/security/
+            - text: ●
+          - listitem [ref=e1511]:
+            - link "Developers" [ref=e1512] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/platform/
+            - text: ●
+          - listitem [ref=e1513]:
+            - link "Status" [ref=e1514] [cursor=pointer]:
+              - /url: https://www.eventbritestatus.com/
+            - text: ●
+          - listitem [ref=e1515]:
+            - link "Terms" [ref=e1516] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/l/legalterms/
+            - text: ●
+          - listitem [ref=e1517]:
+            - link "Privacy" [ref=e1518] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/help/en-us/articles/460838/eventbrite-privacy-policy/
+            - text: ●
+          - listitem [ref=e1519]:
+            - link "Accessibility" [ref=e1520] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/l/accessibility/
+            - text: ●
+          - listitem [ref=e1521]:
+            - link "Cookies" [ref=e1522] [cursor=pointer]:
+              - /url: https://www.eventbrite.com/help/en-us/articles/666792/eventbrite-cookie-policy/
+            - text: ●
+          - listitem [ref=e1523]:
+            - link "Manage Cookie Preferences" [ref=e1524] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e1532]:
+          - generic:
+            - generic:
+              - generic: Locale
+          - generic [ref=e1533]:
+            - generic [ref=e1534]:
+              - generic [ref=e1535]: United States
+              - img [ref=e1538]
+            - combobox "Locale" [ref=e1540] [cursor=pointer]:
+              - option "Argentina"
+              - option "Australia"
+              - option "België"
+              - option "Belgique"
+              - option "Brasil"
+              - option "Canada (EN)"
+              - option "Canada (FR)"
+              - option "Chile"
+              - option "Colombia"
+              - option "Denmark"
+              - option "Deutschland"
+              - option "España"
+              - option "Finland"
+              - option "France"
+              - option "Hong Kong"
+              - option "Ireland"
+              - option "Italia"
+              - option "México"
+              - option "Nederland"
+              - option "New Zealand"
+              - option "Österreich"
+              - option "Perú"
+              - option "Portugal"
+              - option "Schweiz"
+              - option "Singapore"
+              - option "Suisse"
+              - option "Sverige"
+              - option "United Kingdom"
+              - option "United States" [selected]

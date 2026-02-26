@@ -29,8 +29,8 @@ test.describe('Navigation & Exploration', () => {
     expect(tabCount).toBeGreaterThan(0);
 
     // Verify specific neighborhood tabs are present
-    const downtownDenverTab = await homePage.getNeighborhoodTab('Downtown Denver');
-    const northDenverTab = await homePage.getNeighborhoodTab('North Denver');
+    const downtownDenverTab = homePage.getNeighborhoodTab('Downtown Denver');
+    const northDenverTab = homePage.getNeighborhoodTab('North Denver');
     
     // Verify tab exists before checking visibility
     await expect(downtownDenverTab).toHaveCount(1, { timeout: 10000 });
