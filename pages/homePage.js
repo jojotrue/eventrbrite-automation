@@ -52,7 +52,7 @@ class HomePage {
     this.errorAlert = page.locator('[role="alert"]');
 
     // Event Results
-    this.eventCards = page.locator('li').filter({ has: page.locator('h3') });
+    this.eventCards = page.locator('ul[data-testid], ol, ul').filter({ has: page.locator('h3') }).locator('li').filter({ has: page.locator('h3') });
     this.eventHeadings = page.locator('h3');
 
     // Navigation - Breadcrumbs & Category Pages
@@ -73,8 +73,11 @@ class HomePage {
   }
 
   async clickFindEvents() {
-    await this.findEventsLink.click();
-  }
+  await Promise.all([
+    this.page.waitForLoadState('networkidle'),
+    this.findEventsLink.click(),
+  ]);
+}
 
   async clickCreateEvents() {
     await this.createEventsLink.click();
