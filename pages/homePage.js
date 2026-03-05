@@ -30,8 +30,7 @@ class HomePage {
 
     // Events Listing Page - Headings & Neighborhood Navigation
     this.eventListingHeading = page.locator('h1');
-    this.neighborhoodTablist = page.getByRole('group').filter({ hasText: 'Neighborhood' });
-    this.neighborhoodTabs = this.neighborhoodTablist.getByRole('tab');
+    this.neighborhoodTablist = page.getByTestId('filter-section__neighborhood');
 
     // Browse Tabs
     this.allTab = page.getByRole('tab', { name: 'All' });
