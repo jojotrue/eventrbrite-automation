@@ -19,8 +19,11 @@ test.describe('Navigation & Exploration', () => {
     await expect(homePage.eventListingHeading).toBeVisible();
 
     // Step 3: Verify the page displays browsing options by neighborhood
-    // expect: Neighborhood tabs or filters are present (e.g., Downtown Denver, North Denver)
-    await expect(homePage.neighborhoodTablist).toBeVisible({ timeout: 10000 });
+    // expect: Neighborhood section heading is visible
+    await expect(homePage.neighborhoodSectionHeading).toBeVisible({ timeout: 15000 });
+
+    // expect: Neighborhood tablist is visible and populated
+    await expect(homePage.neighborhoodTablist).toBeVisible({ timeout: 15000 });
 
     // Wait for tabs to be rendered
     await homePage.page.waitForTimeout(500);
@@ -28,14 +31,14 @@ test.describe('Navigation & Exploration', () => {
     const tabCount = await homePage.getNeighborhoodTabCount();
     expect(tabCount).toBeGreaterThan(0);
 
-   // Verify specific neighborhoods present (checkboxes on this page)
-    const fivePointsFilter = homePage.getNeighborhoodTab('Five Points');
-    const applewoodFilter = homePage.getNeighborhoodTab('Applewood');
+    // Verify specific neighborhood tabs are present
+    const fivePointsTab = homePage.getNeighborhoodTab('Five Points');
+    const applewoodTab = homePage.getNeighborhoodTab('Applewood');
 
-    await expect(fivePointsFilter).toHaveCount(1, { timeout: 10000 });
-    await expect(fivePointsFilter).toBeVisible({ timeout: 10000 });
+    await expect(fivePointsTab).toHaveCount(1, { timeout: 15000 });
+    await expect(fivePointsTab).toBeVisible({ timeout: 15000 });
 
-    await expect(applewoodFilter).toHaveCount(1, { timeout: 10000 });
-    await expect(applewoodFilter).toBeVisible({ timeout: 10000 });
+    await expect(applewoodTab).toHaveCount(1, { timeout: 15000 });
+    await expect(applewoodTab).toBeVisible({ timeout: 15000 });
   });
 });

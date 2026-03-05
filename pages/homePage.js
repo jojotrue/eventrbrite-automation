@@ -30,7 +30,8 @@ class HomePage {
 
     // Events Listing Page - Headings & Neighborhood Navigation
     this.eventListingHeading = page.locator('h1');
-    this.neighborhoodTablist = page.getByRole('group').filter({ hasText: 'Neighborhood' });
+    this.neighborhoodSectionHeading = page.getByRole('heading', { name: 'Explore by neighborhood', level: 2 });
+    this.neighborhoodTablist = page.getByRole('tablist');
     this.neighborhoodTabs = this.neighborhoodTablist.getByRole('tab');
 
     // Browse Tabs
@@ -176,8 +177,8 @@ class HomePage {
   // ============================================================================
 
   // Get a neighborhood tab by name (dynamic lookup)
-getNeighborhoodTab(name) {
-  return this.neighborhoodTablist.getByRole('checkbox', { name });
+  getNeighborhoodTab(name) {
+    return this.neighborhoodTablist.getByRole('tab', { name });
   }
 
   async selectNeighborhood(neighborhood) {
@@ -186,7 +187,7 @@ getNeighborhoodTab(name) {
   }
 
   async getNeighborhoodTabCount() {
-  return await this.neighborhoodTablist.getByRole('checkbox').count();
+    return await this.neighborhoodTablist.getByRole('tab').count();
   }
 
   // ============================================================================
