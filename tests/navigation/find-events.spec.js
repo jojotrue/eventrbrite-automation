@@ -28,14 +28,14 @@ test.describe('Navigation & Exploration', () => {
     const tabCount = await homePage.getNeighborhoodTabCount();
     expect(tabCount).toBeGreaterThan(0);
 
-   // Verify specific neighborhoods present (checkboxes on this page)
-    const fivePointsFilter = homePage.getNeighborhoodTab('Five Points');
-    const applewoodFilter = homePage.getNeighborhoodTab('Applewood');
+   // Verify specific neighborhoods present (tabs on this page)
+    const downtownDenverTab = homePage.getNeighborhoodTab('Downtown Denver');
+    const northDenverTab = homePage.getNeighborhoodTab('North Denver');
 
-    await expect(fivePointsFilter).toHaveCount(1, { timeout: 10000 });
-    await expect(fivePointsFilter).toBeVisible({ timeout: 10000 });
+    await expect(downtownDenverTab).toHaveCount(1, { timeout: 10000 });
+    await expect(downtownDenverTab).toBeVisible({ timeout: 10000 });
 
-    await expect(applewoodFilter).toHaveCount(1, { timeout: 10000 });
-    await expect(applewoodFilter).toBeVisible({ timeout: 10000 });
+    await expect(northDenverTab).toHaveCount(1, { timeout: 10000 });
+    await expect(northDenverTab).toBeVisible({ timeout: 10000 });
   });
 });

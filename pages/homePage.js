@@ -30,7 +30,7 @@ class HomePage {
 
     // Events Listing Page - Headings & Neighborhood Navigation
     this.eventListingHeading = page.locator('h1');
-    this.neighborhoodTablist = page.getByRole('group').filter({ hasText: 'Neighborhood' });
+    this.neighborhoodTablist = page.getByRole('tablist', { name: 'neighbourhood-tabs' });
     this.neighborhoodTabs = this.neighborhoodTablist.getByRole('tab');
 
     // Browse Tabs
@@ -52,7 +52,7 @@ class HomePage {
     this.errorAlert = page.locator('[role="alert"]');
 
     // Event Results
-    this.eventCards = page.locator('ul[data-testid], ol, ul').filter({ has: page.locator('h3') }).locator('li').filter({ has: page.locator('h3') });
+    this.eventCards = page.locator('a[href*="/e/"]').filter({ has: page.locator('h3') });
     this.eventHeadings = page.locator('h3');
 
     // Navigation - Breadcrumbs & Category Pages
@@ -177,7 +177,7 @@ class HomePage {
 
   // Get a neighborhood tab by name (dynamic lookup)
 getNeighborhoodTab(name) {
-  return this.neighborhoodTablist.getByRole('checkbox', { name });
+  return this.neighborhoodTablist.getByRole('tab', { name });
   }
 
   async selectNeighborhood(neighborhood) {
@@ -186,7 +186,7 @@ getNeighborhoodTab(name) {
   }
 
   async getNeighborhoodTabCount() {
-  return await this.neighborhoodTablist.getByRole('checkbox').count();
+  return await this.neighborhoodTablist.getByRole('tab').count();
   }
 
   // ============================================================================
