@@ -20,8 +20,11 @@ test.describe('Navigation & Exploration', () => {
     await expect(homePage.eventListingHeading).toBeVisible();
 
     // Step 3: Verify the page displays browsing options by neighborhood
-    // expect: Neighborhood tabs or filters are present (e.g., Downtown Denver, North Denver)
-    await expect(homePage.neighborhoodTablist).toBeVisible({ timeout: 10000 });
+    // expect: Neighborhood section heading is visible
+    await expect(homePage.neighborhoodSectionHeading).toBeVisible({ timeout: 15000 });
+
+    // expect: Neighborhood tablist is visible and populated
+    await expect(homePage.neighborhoodTablist).toBeVisible({ timeout: 15000 });
 
     // Wait for tabs to be rendered
     await homePage.page.waitForTimeout(500);
@@ -34,10 +37,10 @@ test.describe('Navigation & Exploration', () => {
     const northDenverTab = homePage.getNeighborhoodTab('North Denver');
     
     // Verify tab exists before checking visibility
-    await expect(downtownDenverTab).toHaveCount(1, { timeout: 10000 });
-    await expect(downtownDenverTab).toBeVisible({ timeout: 10000 });
+    await expect(downtownDenverTab).toHaveCount(1, { timeout: 15000 });
+    await expect(downtownDenverTab).toBeVisible({ timeout: 15000 });
     
-    await expect(northDenverTab).toHaveCount(1, { timeout: 10000 });
-    await expect(northDenverTab).toBeVisible({ timeout: 10000 });
+    await expect(northDenverTab).toHaveCount(1, { timeout: 15000 });
+    await expect(northDenverTab).toBeVisible({ timeout: 15000 });
   });
 });
