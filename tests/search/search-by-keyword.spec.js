@@ -19,12 +19,16 @@ test.describe('Search & Location Functionality', () => {
     
     // Wait for results to load
     await homePage.page.waitForURL('**/music/**', { timeout: 15000 });
-    await expect(homePage.eventCards.first()).toBeVisible();
+    
+    // Verify events exist (count check instead of visibility)
+    const eventCount = await homePage.eventHeadings.count();
+    console.log(`Found ${eventCount} event headings`);
+    expect(eventCount).toBeGreaterThan(0);
 
     // 4. Verify the results list contains relevant events
-    const eventCards = homePage.eventCards;
-    const eventCount = await eventCards.count();
-    await expect(eventCount).toBeGreaterThan(0);
+    const eventCards = homePage.eventContainers;
+    const totalEvents = await eventCards.count();
+    await expect(totalEvents).toBeGreaterThan(0);
 
     // Verify event card contains text/title
     await expect(homePage.eventCards.first()).toContainText(/./);

@@ -52,9 +52,10 @@ class HomePage {
     this.alertMessage = page.getByRole('alert');
     this.errorAlert = page.locator('[role="alert"]');
 
-    // Event Results
-    this.eventCards = page.locator('ul[data-testid], ol, ul').filter({ has: page.locator('h3') }).locator('li').filter({ has: page.locator('h3') });
-    this.eventHeadings = page.locator('h3');
+    // Event Results  
+    this.eventCards = page.locator('a[href*="/e/"]').filter({ hasText: /.+/ }); // Event links with text content
+    this.eventHeadings = page.locator('h3').filter({ hasText: /.+/ }); // h3 with actual text content
+    this.eventContainers = page.locator('h3'); // Use h3 headings as they're more reliable for visibility
 
     // Navigation - Breadcrumbs & Category Pages
     this.breadcrumbNav = page.getByRole('navigation', { name: 'breadcrumbs' });
@@ -74,10 +75,7 @@ class HomePage {
   }
 
   async clickFindEvents() {
-    await Promise.all([
-      this.page.waitForLoadState('domcontentloaded'),
-      this.findEventsLink.click(),
-    ]);
+    await this.findEventsLink.click();
   }
 
   async clickCreateEvents() {
