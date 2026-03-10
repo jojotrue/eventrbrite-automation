@@ -66,7 +66,7 @@ class HomePage {
   // ============================================================================
 
   async goto(path = '/') {
-    await this.page.goto(path, { waitUntil: 'networkidle' });
+    await this.page.goto(path, { waitUntil: 'domcontentloaded' });
   }
 
   async goToHomepage() {
@@ -75,7 +75,7 @@ class HomePage {
 
   async clickFindEvents() {
     await Promise.all([
-      this.page.waitForLoadState('networkidle'),
+      this.page.waitForLoadState('domcontentloaded'),
       this.findEventsLink.click(),
     ]);
   }
