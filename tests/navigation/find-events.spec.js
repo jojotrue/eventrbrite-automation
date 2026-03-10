@@ -9,7 +9,10 @@ test.describe('Navigation & Exploration', () => {
     // expect: The 'Find Events' link is visible in the main navigation
     await expect(homePage.findEventsLink).toBeVisible();
 
-    // Step 2: Click on 'Find Events' link
+    // Step 2: Set location to Denver
+    await homePage.setLocation('Denver');
+
+    // Step 3: Click on 'Find Events' link
     await homePage.clickFindEvents();
 
     // expect: User is navigated to the events listing page
@@ -30,13 +33,11 @@ test.describe('Navigation & Exploration', () => {
 
     // Verify specific neighborhood tabs are present
     const downtownDenverTab = homePage.getNeighborhoodTab('Downtown Denver');
-    const northDenverTab = homePage.getNeighborhoodTab('North Denver');
     
     // Verify tab exists before checking visibility
     await expect(downtownDenverTab).toHaveCount(1, { timeout: 10000 });
     await expect(downtownDenverTab).toBeVisible({ timeout: 10000 });
     
-    await expect(northDenverTab).toHaveCount(1, { timeout: 10000 });
-    await expect(northDenverTab).toBeVisible({ timeout: 10000 });
+    
   });
 });

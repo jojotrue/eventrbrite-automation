@@ -15,7 +15,7 @@ class HomePage {
     // Search & Location
     this.searchInput = page.getByRole('searchbox', { name: /search events/i });
     this.searchButton = page.getByRole('button', { name: /search button/i });
-    this.locationInput = page.getByRole('combobox', { name: /autocomplete|choose a location/i });
+    this.locationInput = page.getByTestId('header-search').getByRole('combobox', { name: 'autocomplete' });
 
     // Category Links - Scoped to icon-category-browse container to avoid strict mode violations
     const categoryContainer = page.getByTestId('icon-category-browse');
