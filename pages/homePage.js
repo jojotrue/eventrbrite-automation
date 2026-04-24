@@ -282,9 +282,10 @@ class HomePage {
     const hasResults = headingCount > 0 || cardCount > 0;
 
     // Check for common Eventbrite empty-state copy
-    const emptyState = this.page.locator(
-      'text=/no events found/i, text=/no results/i, text=/couldn\'t find/i, text=/0 events/i'
-    );
+    const emptyState = this.page.locator('text=/no events found/i')
+      .or(this.page.locator('text=/no results/i'))
+      .or(this.page.locator('text=/couldn\'t find/i'))
+      .or(this.page.locator('text=/0 events/i'));
     const isEmpty = !hasResults && (await emptyState.count()) > 0;
 
     return { hasResults, count: headingCount || cardCount, isEmpty };
