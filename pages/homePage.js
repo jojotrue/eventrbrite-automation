@@ -266,6 +266,30 @@ class HomePage {
     return (await this.eventHeadings.count()) > 0;
   }
 
+  // Wait for either search results or an empty-state indicator to be present.
+  // Uses networkidle so the page has fully settled before we inspect the DOM,
+  // avoiding the flaky Promise.race/waitFor(h3) pattern that times out when
+  // Eventbrite returns no h3 elements on a results page.
+  async waitForResultsOrEmpty(timeout = 30000) {
+    try {
+      await this.page.waitForLoadState('networkidle', { timeout });
+    } catch {
+      // networkidle may time out on pages with long-running polls; proceed anyway
+    }
+
+    const headingCount = await this.eventHeadings.count();
+    const cardCount = await this.eventCards.count();
+    const hasResults = headingCount > 0 || cardCount > 0;
+
+    // Check for common Eventbrite empty-state copy
+    const emptyState = this.page.locator(
+      'text=/no events found/i, text=/no results/i, text=/couldn\'t find/i, text=/0 events/i'
+    );
+    const isEmpty = !hasResults && (await emptyState.count()) > 0;
+
+    return { hasResults, count: headingCount || cardCount, isEmpty };
+  }
+
   // Get a category breadcrumb link by name (dynamic lookup)
   // Falls back to text-only breadcrumb if link not found
   async getCategoryBreadcrumbLink(categoryName) {
