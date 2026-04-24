@@ -42,15 +42,8 @@ test.describe('Navigation & Exploration', () => {
       const tabCount = await homePage.getNeighborhoodTabCount();
       expect(tabCount).toBeGreaterThan(0);
 
-      // Verify specific neighborhood tabs are present
-      const northDenverTab = homePage.getNeighborhoodTab('North Denver');
-      const colfaxTab = homePage.getNeighborhoodTab('Colfax');
-      
-      await expect(northDenverTab).toHaveCount(1, { timeout: 10000 });
-      await expect(northDenverTab).toBeVisible({ timeout: 10000 });
-      
-      await expect(colfaxTab).toHaveCount(1, { timeout: 10000 });
-      await expect(colfaxTab).toBeVisible({ timeout: 10000 });
+      // Verify the first tab in the tablist is visible (generic check - tab names are dynamic)
+      await expect(homePage.neighborhoodTablist.getByRole('tab').first()).toBeVisible({ timeout: 10000 });
     } else {
       console.log('Neighborhood section not found - page may have different structure');
       // Just verify we have some events present
