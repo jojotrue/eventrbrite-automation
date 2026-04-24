@@ -19,16 +19,25 @@ test.describe('Search & Location Functionality', () => {
     
     // Wait for results to load
     await homePage.page.waitForURL('**/music/**', { timeout: 15000 });
+    await homePage.page.waitForLoadState('domcontentloaded');
     
-    // Verify events exist (count check instead of visibility)
-    const eventCount = await homePage.eventHeadings.count();
-    console.log(`Found ${eventCount} event headings`);
-    expect(eventCount).toBeGreaterThan(0);
+    // Poll until at least one event heading appears (dynamic content; avoid fixed sleep)
+    await expect
+      .poll(async () => homePage.eventHeadings.count(), {
+        timeout: 20000,
+        message: 'Expected at least one event heading to render',
+      })
+      .toBeGreaterThan(0);
+    console.log(`Found ${await homePage.eventHeadings.count()} event headings`);
 
     // 4. Verify the results list contains relevant events
-    const eventCards = homePage.eventContainers;
-    const totalEvents = await eventCards.count();
-    await expect(totalEvents).toBeGreaterThan(0);
+    // Poll for event containers (avoids incorrect await expect(number) pattern)
+    await expect
+      .poll(async () => homePage.eventContainers.count(), {
+        timeout: 20000,
+        message: 'Expected at least one event container to render',
+      })
+      .toBeGreaterThan(0);
 
     // Verify event card contains text/title
     await expect(homePage.eventCards.first()).toContainText(/./);

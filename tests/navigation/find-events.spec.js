@@ -24,13 +24,14 @@ test.describe('Navigation & Exploration', () => {
     // expect: User is navigated to the events listing page
     await expect(page).toHaveURL(/\/d\/.*\/events/, { timeout: 15000 });
 
-    // Wait for page content to load
-    await page.waitForTimeout(3000);
-    
-    // expect: Events are present on the page (basic content check)
-    const eventCount = await homePage.eventHeadings.count();
-    console.log(`Found ${eventCount} event headings`);
-    expect(eventCount).toBeGreaterThan(0);
+    // Wait for dynamic event content to appear (CI can be slow; poll instead of fixed sleep)
+    await expect
+      .poll(async () => homePage.eventHeadings.count(), {
+        timeout: 20000,
+        message: 'Expected at least one event heading to render',
+      })
+      .toBeGreaterThan(0);
+    console.log(`Found ${await homePage.eventHeadings.count()} event headings`);
 
     // Debug: Check what page we're actually on
     console.log('Current URL:', page.url());
@@ -50,12 +51,15 @@ test.describe('Navigation & Exploration', () => {
       // Wait for neighborhood tabs to load
       await expect(homePage.neighborhoodTablist).toBeVisible({ timeout: 10000 });
 
-      // Wait for tabs to be rendered
-      await homePage.page.waitForTimeout(2000);
-
+      // Wait for tabs to be rendered (poll instead of fixed sleep)
+      await expect
+        .poll(async () => homePage.getNeighborhoodTabCount(), {
+          timeout: 10000,
+          message: 'Expected at least one neighborhood tab to render',
+        })
+        .toBeGreaterThan(0);
       const tabCount = await homePage.getNeighborhoodTabCount();
       console.log('Neighborhood tab count:', tabCount);
-      expect(tabCount).toBeGreaterThan(0);
 
       // Verify tabs are loaded - just check first tab exists
       console.log('Checking for Downtown Denver tab...');
@@ -70,10 +74,14 @@ test.describe('Navigation & Exploration', () => {
       console.log('Downtown Denver tab verified successfully');
     } else {
       console.log('Neighborhood section not found - page may have different structure');
-      // Just verify we have some events present
-      const eventCount = await homePage.eventHeadings.count();
-      console.log(`Found ${eventCount} event headings in fallback`);
-      expect(eventCount).toBeGreaterThan(0);
+      // Just verify we have some events present (poll for dynamic content)
+      await expect
+        .poll(async () => homePage.eventHeadings.count(), {
+          timeout: 20000,
+          message: 'Expected at least one event heading to render in fallback',
+        })
+        .toBeGreaterThan(0);
+      console.log(`Found ${await homePage.eventHeadings.count()} event headings in fallback`);
     }
     
     
