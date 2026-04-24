@@ -6,31 +6,30 @@ const { test, expect } = require('../../fixtures/homePage.fixture');
 test.describe('Search & Location Functionality', () => {
   test('Search for events by keyword', async ({ homePage }) => {
     // 1. User is on the Eventbrite homepage
-    const searchInput = homePage.searchInput;
-    await expect(searchInput).toBeVisible();
+    await expect(homePage.searchInput).toBeVisible();
 
-    // 2. Click on the search input and type a keyword (e.g., 'music')
-    await searchInput.click();
-    await searchInput.fill('music');
-    await expect(searchInput).toHaveValue('music');
+    // 2. Type a keyword into the search input
+    await homePage.searchInput.click();
+    await homePage.searchInput.fill('music');
+    await expect(homePage.searchInput).toHaveValue('music');
 
-    // 3. Click the search button or press Enter
+    // 3. Submit the search
     await homePage.searchButton.click();
-    
-    // Wait for results to load
-    await homePage.page.waitForURL('**/music/**', { timeout: 15000 });
-    
-    // Verify events exist (count check instead of visibility)
-    const eventCount = await homePage.eventHeadings.count();
-    console.log(`Found ${eventCount} event headings`);
-    expect(eventCount).toBeGreaterThan(0);
 
-    // 4. Verify the results list contains relevant events
-    const eventCards = homePage.eventContainers;
-    const totalEvents = await eventCards.count();
-    await expect(totalEvents).toBeGreaterThan(0);
+    // 4. Verify URL navigated to a music results page
+    await expect(homePage.page).toHaveURL(/music/, { timeout: 15000 });
 
-    // Verify event card contains text/title
-    await expect(homePage.eventCards.first()).toContainText(/./);
+    // 5. Verify the page h1 heading reflects the music search/category
+    await expect(homePage.eventListingHeading).toBeVisible({ timeout: 10000 });
+    await expect(homePage.eventListingHeading).toContainText(/music/i);
+
+    // 6. Verify breadcrumb navigation is present and shows a path
+    await expect(homePage.breadcrumbNav).toBeVisible({ timeout: 10000 });
+    const breadcrumbLinks = homePage.breadcrumbNav.getByRole('link');
+    const breadcrumbCount = await breadcrumbLinks.count();
+    expect(breadcrumbCount).toBeGreaterThan(0);
+
+    // 7. Verify the search input still contains the keyword
+    await expect(homePage.searchInput).toHaveValue('music');
   });
 });

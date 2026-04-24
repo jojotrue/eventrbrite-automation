@@ -77,17 +77,19 @@ The POM covers:
 - **Category browsing** — Music, Nightlife, Performing Arts, Food & Drink, Business, and more — scoped to the `icon-category-browse` container to avoid strict mode violations
 - **Browse tabs** — All, For You, Today, This Weekend
 - **Neighborhood navigation** — tablist-based neighborhood filtering with dynamic tab count support
-- **Event results** — event card locators, heading counts, event lookup by name
+- **Event results** — `eventCards` and `eventHeadings` locators for event link and heading counts; `eventListingHeading` (h1) and `breadcrumbNav` for structural page validation
 - **Login form** — email, password, continue/sign-in flow, password visibility toggle, error alerts
 - **Breadcrumb navigation** — with graceful fallback for text-only (non-link) breadcrumb items
 
 ```js
 // Example: Using the POM in a test
-const { test, expect } = require('../fixtures/homePage.fixture');
+const { test, expect } = require('../../fixtures/homePage.fixture');
 
-test('user can search for a music event', async ({ homePage, page }) => {
-  await homePage.searchForEvent('jazz festival', 'New York');
-  await expect(page).toHaveURL(/search/);
+test('user can search for a music event', async ({ homePage }) => {
+  await homePage.searchInput.fill('music');
+  await homePage.searchButton.click();
+  await expect(homePage.page).toHaveURL(/music/, { timeout: 15000 });
+  await expect(homePage.eventListingHeading).toContainText(/music/i);
 });
 ```
 
@@ -111,12 +113,15 @@ All spec files import from the fixture instead of `@playwright/test` directly, g
 
 ## Test Coverage
 
-| Area | Tests |
-|---|---|
-| Navigation | Find Events link, category navigation (Music, etc.) |
-| Search | Keyword search, search results validation |
-| Event Discovery | Category pages, breadcrumbs, event card listings |
-| *(Planned)* | Additional categories, neighborhood filtering, login flows |
+| Area | Spec File | What Is Verified |
+|---|---|---|
+| Navigation | `tests/navigation/find-events.spec.js` | Find Events link navigates to events listing page; URL pattern, h3 event heading count, optional neighborhood tabs (Downtown Denver) |
+| Navigation | `tests/navigation/music-category.spec.js` | Find Events navigates to events listing; h3 heading count; optional neighborhood tabs (North Denver, Colfax) |
+| Search | `tests/search/search-by-keyword.spec.js` | Keyword search navigates to correct URL; h1 heading reflects category; breadcrumb nav present; search input retains keyword |
+| Seed | `tests/eventbrite.seed.spec.js` | Scaffold placeholder — homepage loads |
+| *(Planned)* | — | Additional category pages, neighborhood tab filtering, login flows, cross-browser |
+
+> **Search test design note:** Eventbrite renders each event card with a CSS-hidden `event-card-link` wrapper that covers the full card. This element matches event link selectors but reports as hidden in headless Chromium, making event card count assertions unreliable across environments. The search test instead validates stable structural elements — URL, h1 heading, breadcrumb navigation, and search input state — which are always visible and render immediately.
 
 ---
 
@@ -228,4 +233,4 @@ The workflow file lives at `.github/workflows/playwright.yml`.
 ## Author
 
 Built by [jojotrue](https://github.com/jojotrue) — QA Engineer  
-Open to opportunities. Let's connect on [LinkedIn](https://linkedin.com/in/your-profile).This is a directory for test plans.
+Open to opportunities. Let's connect on [LinkedIn](https://linkedin.com/in/your-profile).
