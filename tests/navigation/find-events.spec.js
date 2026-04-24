@@ -24,8 +24,8 @@ test.describe('Navigation & Exploration', () => {
     // expect: User is navigated to the events listing page
     await expect(page).toHaveURL(/\/d\/.*\/events/, { timeout: 15000 });
 
-    // Wait for page content to load
-    await page.waitForTimeout(3000);
+    // Wait for at least one event heading to appear before counting
+    await expect(homePage.eventHeadings.first()).toBeVisible({ timeout: 15000 });
     
     // expect: Events are present on the page (basic content check)
     const eventCount = await homePage.eventHeadings.count();
