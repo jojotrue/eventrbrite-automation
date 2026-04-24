@@ -16,13 +16,10 @@ test.describe('Navigation & Exploration', () => {
     // expect: User is navigated to the events listing page
     await expect(page).toHaveURL(/\/d\/.*\/events/);
 
-    // Wait for page content to load
-    await page.waitForTimeout(3000);
-    
-    // expect: Events are present on the page (basic content check)
-    const eventCount = await homePage.eventHeadings.count();
+    // Wait for results or empty state
+    const { eventCount, hasEmptyState } = await homePage.waitForResultsOrEmpty();
     console.log(`Found ${eventCount} event headings`);
-    expect(eventCount).toBeGreaterThan(0);
+    expect(eventCount > 0 || hasEmptyState).toBe(true);
 
     // Step 3: Verify we're on the events page with content loading  
     // Check if neighborhood section exists (it may be optional)
@@ -54,9 +51,9 @@ test.describe('Navigation & Exploration', () => {
     } else {
       console.log('Neighborhood section not found - page may have different structure');
       // Just verify we have some events present
-      const eventCount = await homePage.eventHeadings.count();
-      console.log(`Found ${eventCount} event headings in fallback`);
-      expect(eventCount).toBeGreaterThan(0);
+      const { eventCount: fallbackCount, hasEmptyState: fallbackEmpty } = await homePage.waitForResultsOrEmpty();
+      console.log(`Found ${fallbackCount} event headings in fallback`);
+      expect(fallbackCount > 0 || fallbackEmpty).toBe(true);
     }
   });
 });

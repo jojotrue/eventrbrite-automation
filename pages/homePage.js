@@ -266,6 +266,19 @@ class HomePage {
     return (await this.eventHeadings.count()) > 0;
   }
 
+  async waitForResultsOrEmpty({ timeout = 30000 } = {}) {
+    const emptyState = this.page.locator('text=/no events|no results|couldn\'t find/i');
+    await Promise.race([
+      this.eventHeadings.first().waitFor({ state: 'visible', timeout }),
+      emptyState.first().waitFor({ state: 'visible', timeout }),
+    ]);
+    return {
+      eventCount: await this.eventHeadings.count(),
+      // isVisible() rejects when the element is detached; treat that as "not visible"
+      hasEmptyState: await emptyState.first().isVisible().catch(() => false),
+    };
+  }
+
   // Get a category breadcrumb link by name (dynamic lookup)
   // Falls back to text-only breadcrumb if link not found
   async getCategoryBreadcrumbLink(categoryName) {
