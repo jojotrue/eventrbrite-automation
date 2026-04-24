@@ -12,7 +12,7 @@ class HomePage {
     this.locationInput = page.getByTestId('header-search').getByRole('combobox', { name: 'autocomplete' });
 
     // Events Listing Page
-    this.eventListingHeading = page.locator('h1');
+    this.eventListingHeading = page.locator('h1').first();
 
     // Neighborhood Navigation
     this.neighborhoodHeading = page.getByRole('heading', { name: 'Explore by neighborhood' });
