@@ -13,7 +13,6 @@ class HomePage {
 
     // Events Listing Page
     this.eventListingHeading = page.locator('h1');
-    this.eventHeadings = page.locator('h3').filter({ hasText: /.+/ });
 
     // Neighborhood Navigation
     this.neighborhoodHeading = page.getByRole('heading', { name: 'Explore by neighborhood' });
