@@ -31,6 +31,11 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    /* Prevent bot detection by disabling the webdriver flag */
+    launchOptions: {
+      args: ['--disable-blink-features=AutomationControlled'],
+    },
   },
 
   /* Configure projects for major browsers */
